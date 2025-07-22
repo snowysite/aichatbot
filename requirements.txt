@@ -2,3 +2,4 @@ flask
 openai
 werkzeug
 sqlite3-bro
+python-dotenv
