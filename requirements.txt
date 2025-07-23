@@ -1,5 +1,4 @@
 flask
+gunicorn
 openai
-werkzeug
-sqlite3-bro
 python-dotenv
