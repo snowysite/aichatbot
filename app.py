@@ -16,7 +16,7 @@ DB_FILE = "chatbot.db"
 # ✅ Init Flask + SocketIO
 app = Flask(__name__)
 app.secret_key = "supersecretkey"
-socketio = SocketIO(app, cors_allowed_origins="*")
+socketio = SocketIO(app, cors_allowed_origins="*", async_mode="gevent")
 
 # ✅ Redis cache (optional)
 try:
