@@ -1,6 +1,9 @@
 # ✅ Core web framework
 Flask==3.0.3
 
+# ✅ Gunicorn for production server (needed on Render/Heroku)
+gunicorn==21.2.0
+
 # ✅ Real-time WebSocket support
 flask-socketio==5.3.6
 python-socketio==5.11.2
