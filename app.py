@@ -4,7 +4,7 @@ from flask_socketio import SocketIO, emit
 from werkzeug.security import generate_password_hash, check_password_hash
 from datetime import datetime, date
 from dotenv import load_dotenv
-import redis 
+# import redis 
 import re
 
 # ✅ Load env
