@@ -128,6 +128,10 @@ class GuessWordPlugin:
 PLUGINS = [QuizPlugin(), GuessWordPlugin()]
 
 # ✅ DB helpers
+# ✅ Helpers
+def normalize_text(txt):
+    return re.sub(r"[^a-z0-9 ]+", "", txt.lower()).strip()
+
 def save_chat(username, role, content):
     conn = get_db()
     c = conn.cursor()
@@ -137,38 +141,57 @@ def save_chat(username, role, content):
     conn.commit()
     conn.close()
 
-def get_chat_history(username):
-    conn = get_db()
-    c = conn.cursor()
-    c.execute("SELECT role, content, timestamp FROM chat_history WHERE username=? ORDER BY id ASC", (username,))
-    rows = c.fetchall()
-    conn.close()
-    return rows
-
-def normalize_text(txt):
-    """Lowercase, remove punctuation, and trim spaces for better matching."""
-    txt = txt.lower().strip()
-    txt = re.sub(r'[^\w\s]', '', txt)  # remove punctuation
-    return txt
-
-def save_knowledge(question, answer):
-    """Normalize question before saving to DB"""
-    question = normalize_text(question)
-    conn = get_db()
-    c = conn.cursor()
-    c.execute("INSERT OR REPLACE INTO bot_knowledge(question, answer) VALUES (?,?)", (question, answer))
-    conn.commit()
-    conn.close()
-
 def get_knowledge_answer(question):
-    """Retrieve answer from bot_knowledge table for a normalized question."""
-    norm_question = normalize_text(question)
+    norm_q = normalize_text(question)
     conn = get_db()
     c = conn.cursor()
-    c.execute("SELECT answer FROM bot_knowledge WHERE question=?", (norm_question,))
+    c.execute("SELECT answer FROM bot_knowledge WHERE question=?", (norm_q,))
     row = c.fetchone()
     conn.close()
     return row[0] if row else None
+
+def save_knowledge(question, answer):
+    q = normalize_text(question)
+    conn = get_db()
+    c = conn.cursor()
+    c.execute("INSERT OR REPLACE INTO bot_knowledge(question, answer) VALUES (?,?)", (q, answer))
+    conn.commit()
+    conn.close()
+
+def remember_fact(username, key, value):
+    conn = get_db()
+    c = conn.cursor()
+    c.execute("INSERT OR REPLACE INTO user_memory(username, key, value) VALUES (?,?,?)", (username, key, value))
+    conn.commit()
+    conn.close()
+
+def recall_fact(username, key):
+    conn = get_db()
+    c = conn.cursor()
+    c.execute("SELECT value FROM user_memory WHERE username=? AND key=?", (username, key))
+    row = c.fetchone()
+    conn.close()
+    return row[0] if row else None
+
+# ✅ Mini Games
+def play_rps(choice):
+    options = ["rock", "paper", "scissors"]
+    bot_choice = random.choice(options)
+    if choice == bot_choice:
+        return f"I chose {bot_choice}! It’s a draw. 🤝"
+    if (choice == "rock" and bot_choice == "scissors") or \
+       (choice == "paper" and bot_choice == "rock") or \
+       (choice == "scissors" and bot_choice == "paper"):
+        return f"I chose {bot_choice}! You win! 🎉"
+    return f"I chose {bot_choice}! I win! 😎"
+
+secret_facts = [
+    "The CIA once tried to use cats as spy devices (Acoustic Kitty program).",
+    "The KGB had hidden cyanide capsules in fountain pens.",
+    "Modern drones can identify targets using AI facial recognition.",
+    "AI-controlled swarms are the future of warfare.",
+    "Satellite hacking has been tested in cyber warfare drills."
+]
 
 # ✅ User management helpers
 def get_user(username):
