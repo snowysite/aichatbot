@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Chatbot | Nexora Style</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
   <style>
     body {
       background: linear-gradient(160deg, #000000, #1a1a1a);
@@ -16,7 +16,6 @@
       margin: 0;
     }
 
-    /* Top bar like Nexora */
     .top-bar {
       background: #111;
       padding: 15px;
@@ -25,28 +24,31 @@
       align-items: center;
       border-bottom: 1px solid #ff4500;
     }
+
     .top-bar h3 {
       color: #ff4500;
       margin: 0;
       font-weight: 600;
     }
+
     .top-bar .btn {
       border-radius: 20px;
       padding: 6px 15px;
       font-size: 0.85rem;
     }
+
     .btn-logout {
       background: #ff4500;
       color: #000;
       border: none;
     }
+
     .btn-history {
       background: transparent;
       color: #ff4500;
       border: 1px solid #ff4500;
     }
 
-    /* Chat container */
     .chat-container {
       flex: 1;
       padding: 20px;
@@ -56,7 +58,6 @@
       gap: 10px;
     }
 
-    /* Chat bubbles Nexora style */
     .msg {
       max-width: 70%;
       padding: 12px 15px;
@@ -64,12 +65,14 @@
       font-size: 0.95rem;
       line-height: 1.4;
     }
+
     .msg.user {
       align-self: flex-end;
       background: rgba(255, 69, 0, 0.9);
       color: #000;
       border-bottom-right-radius: 0;
     }
+
     .msg.bot {
       align-self: flex-start;
       background: rgba(255, 255, 255, 0.05);
@@ -78,13 +81,20 @@
       border: 1px solid rgba(255, 69, 0, 0.4);
     }
 
-    /* Chat input area */
+    .typing-indicator {
+      align-self: flex-start;
+      font-style: italic;
+      color: #aaa;
+      font-size: 0.85rem;
+    }
+
     .chat-input-area {
       display: flex;
       padding: 15px;
       background: #111;
       border-top: 1px solid #222;
     }
+
     .chat-input-area input {
       flex: 1;
       background: #1a1a1a;
@@ -94,9 +104,11 @@
       border-radius: 8px;
       outline: none;
     }
+
     .chat-input-area input::placeholder {
       color: #888;
     }
+
     .chat-input-area button {
       margin-left: 10px;
       background: linear-gradient(135deg, #ff4500, #ff6a00);
@@ -107,8 +119,48 @@
       border-radius: 8px;
       transition: 0.3s ease;
     }
+
     .chat-input-area button:hover {
       opacity: 0.85;
+    }
+
+    /* Light Mode Styles */
+    body.light-mode {
+      background: #f9f9f9;
+      color: #111;
+    }
+
+    body.light-mode .top-bar {
+      background: #fff;
+      border-bottom: 1px solid #ff4500;
+    }
+
+    body.light-mode .top-bar h3 {
+      color: #ff4500;
+    }
+
+    body.light-mode .chat-container {
+      background: #f0f0f0;
+    }
+
+    body.light-mode .msg.user {
+      background: #ff4500;
+      color: #fff;
+    }
+
+    body.light-mode .msg.bot {
+      background: #ffffff;
+      color: #111;
+      border: 1px solid rgba(255, 69, 0, 0.2);
+    }
+
+    body.light-mode .chat-input-area {
+      background: #fff;
+    }
+
+    body.light-mode .chat-input-area input {
+      background: #eaeaea;
+      color: #000;
     }
   </style>
 </head>
@@ -120,6 +172,7 @@
     <div>
       <a href="{{ url_for('history') }}" class="btn btn-history">📜 History</a>
       <a href="{{ url_for('logout') }}" class="btn btn-logout">Logout</a>
+      <button id="theme-toggle" class="btn btn-sm btn-history">🌗 Toggle</button>
     </div>
   </div>
 
@@ -133,28 +186,64 @@
   </form>
 
   <script>
+    const socket = io();
     const chatBox = document.getElementById("chat-box");
     const form = document.getElementById("chat-form");
     const input = document.getElementById("user-input");
 
-    form.addEventListener("submit", async (e) => {
+    let typingIndicator;
+
+    function appendMessage(text, sender) {
+      const div = document.createElement("div");
+      div.classList.add("msg", sender);
+      div.innerHTML = text;
+      chatBox.appendChild(div);
+      chatBox.scrollTo({ top: chatBox.scrollHeight, behavior: "smooth" });
+    }
+
+    function showTyping() {
+      if (!typingIndicator) {
+        typingIndicator = document.createElement("div");
+        typingIndicator.classList.add("typing-indicator");
+        typingIndicator.innerText = "🤖 SJ is typing...";
+        chatBox.appendChild(typingIndicator);
+        chatBox.scrollTo({ top: chatBox.scrollHeight, behavior: "smooth" });
+      }
+    }
+
+    function hideTyping() {
+      if (typingIndicator) {
+        typingIndicator.remove();
+        typingIndicator = null;
+      }
+    }
+
+    // Handle incoming bot reply
+    socket.on("bot_reply", reply => {
+      hideTyping();
+      appendMessage(reply, "bot");
+    });
+
+    // When form is submitted
+    form.addEventListener("submit", e => {
       e.preventDefault();
       const msg = input.value.trim();
       if (!msg) return;
-      addMessage("user", msg);
+
+      appendMessage(msg, "user");
       input.value = "";
 
-      let res = await axios.post("/chat", {message: msg});
-      addMessage("bot", res.data.reply);
+      showTyping();
+      socket.emit("user_message", msg);
     });
 
-    function addMessage(role, text) {
-      const div = document.createElement("div");
-      div.classList.add("msg", role);
-      div.innerHTML = text;
-      chatBox.appendChild(div);
-      chatBox.scrollTop = chatBox.scrollHeight;
-    }
+    // Auto-focus input
+    window.onload = () => input.focus();
+
+    // Theme toggle
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+      document.body.classList.toggle("light-mode");
+    });
   </script>
 
 </body>

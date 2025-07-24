@@ -1,212 +1,139 @@
-import os, sqlite3, smtplib, ssl, random, time, requests
+import os, sqlite3, random, time
 from flask import Flask, render_template, request, redirect, url_for, session, jsonify
+from flask_socketio import SocketIO, emit
 from werkzeug.security import generate_password_hash, check_password_hash
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
-from datetime import datetime
+from datetime import datetime, date
 from dotenv import load_dotenv
-from openai import OpenAI
+import redis 
+import re
 
-# ✅ Load .env file for secrets
+# ✅ Load env
 load_dotenv()
-OPENAI_KEY = os.getenv("OPENAI_API_KEY")
-PAYSTACK_SECRET = os.getenv("PAYSTACK_SECRET_KEY")  # Paystack secret key
 
-# ✅ Flask setup
-app = Flask(__name__)
-app.secret_key = "supersecretkey"
+# ✅ Database file path (must be defined BEFORE init_db)
 DB_FILE = "chatbot.db"
 
-# ✅ OpenAI client
-client = OpenAI(api_key=OPENAI_KEY)
+# ✅ Init Flask + SocketIO
+app = Flask(__name__)
+app.secret_key = "supersecretkey"
+socketio = SocketIO(app, cors_allowed_origins="*")
 
-# ✅ Email credentials
-EMAIL_USER = "sitesnow77@gmail.com"
-EMAIL_PASS = "ofwt toiz qdou cppf"
+# ✅ Redis cache (optional)
+try:
+    cache = redis.Redis(host="localhost", port=6379, db=0)
+    cache.ping()  # test connection
+except:
+    print("⚠ Redis not running, caching disabled!")
+    cache = None
 
-# ✅ DB Helper
+def init_db():
+    conn = get_db()
+    c = conn.cursor()
+
+    c.execute('''
+        CREATE TABLE IF NOT EXISTS auth_users(
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            username TEXT UNIQUE,
+            email TEXT,
+            password TEXT,
+            last_greeting_date TEXT
+        )
+    ''')
+
+    c.execute('''
+        CREATE TABLE IF NOT EXISTS chat_history(
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            username TEXT,
+            role TEXT,
+            content TEXT,
+            timestamp TEXT
+        )
+    ''')
+
+    c.execute('''
+        CREATE TABLE IF NOT EXISTS bot_knowledge(
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            question TEXT UNIQUE,
+            answer TEXT
+        )
+    ''')
+
+    c.execute('''
+        CREATE TABLE IF NOT EXISTS reset_otps(
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            username TEXT,
+            otp TEXT,
+            created_at TEXT
+        )
+    ''')
+
+    conn.commit()
+    conn.close()
+    print("✅ Database initialized (all tables ensured).")
+
+# ✅ Database helpers
 def get_db():
     conn = sqlite3.connect(DB_FILE)
     conn.execute("PRAGMA journal_mode=WAL")
     return conn
 
-def init_db():
-    conn = get_db()
-    c = conn.cursor()
-    # Users table with plan + chat tracking
-    c.execute('''CREATE TABLE IF NOT EXISTS auth_users(
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        username TEXT UNIQUE,
-        email TEXT,
-        password TEXT,
-        plan TEXT DEFAULT 'free',
-        daily_chats INTEGER DEFAULT 0,
-        last_chat_date TEXT
-    )''')
-    # Chat history
-    c.execute('''CREATE TABLE IF NOT EXISTS chat_history(
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        username TEXT,
-        role TEXT,
-        content TEXT,
-        timestamp TEXT
-    )''')
-    # OTP table
-    c.execute('''CREATE TABLE IF NOT EXISTS otp_codes(
-        username TEXT,
-        otp TEXT,
-        expires INTEGER
-    )''')
-    conn.commit()
-    conn.close()
-
 init_db()
 
-# ✅ Email sender for OTP
-def send_otp_email(to_email, username, otp):
-    msg = MIMEMultipart("alternative")
-    msg["Subject"] = "Your OTP Reset Code"
-    msg["From"] = EMAIL_USER
-    msg["To"] = to_email
+def normalize_text(txt: str) -> str:
+    """Lowercase and remove punctuation for better matching"""
+    return re.sub(r"[^a-z0-9 ]+", "", txt.lower()).strip()
 
-    html = f"""
-    <html>
-    <body style="font-family:Arial; background:#f7f7f7; padding:20px;">
-      <div style="background:#fff; padding:20px; border-radius:10px;">
-        <h2>🔐 Password Reset Request</h2>
-        <p>Hello <b>{username}</b>,</p>
-        <p>Your OTP code is:</p>
-        <h3 style="color:blue;">{otp}</h3>
-        <p>It will expire in <b>10 minutes</b>.</p>
-        <p>If you didn’t request this, ignore this email.</p>
-        <hr>
-        <p>🤖 Chatbot Team</p>
-      </div>
-    </body>
-    </html>
-    """
+# ✅ Fun facts & jokes
+fun_facts = [
+    "Honey never spoils. Archaeologists have eaten 3000-year-old honey!",
+    "Bananas are berries, but strawberries are not.",
+    "Octopuses have three hearts and blue blood!",
+    "Sharks existed before trees 🌊",
+    "There are more stars in the universe than grains of sand on Earth.",
+    "Wombat poop is cube-shaped! 🐾"
+]
+jokes = [
+    "Why don’t skeletons fight each other? They don’t have the guts! 💀",
+    "I told my computer I needed a break… it said 'No problem, I’ll go to sleep.' 🖥",
+    "Why did the scarecrow win an award? Because he was outstanding in his field! 🌾",
+    "Parallel lines have so much in common… it’s a shame they’ll never meet.",
+    "Why don’t programmers like nature? It has too many bugs. 🐛"
+]
 
-    msg.attach(MIMEText(html, "html"))
-    context = ssl.create_default_context()
+# ✅ Plugin System
+class QuizPlugin:
+    name = "QuizPlugin"
+    def _init_(self):
+        self.questions = {
+            "What is 2 + 2?": "4",
+            "Capital of France?": "paris",
+            "Who wrote Hamlet?": "shakespeare"
+        }
+    def can_handle(self, msg):
+        return "quiz" in msg.lower()
+    def handle(self, username, msg):
+        q, a = random.choice(list(self.questions.items()))
+        return f"🎯 Quiz time! {q} (Answer: {a})"
 
-    with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
-        server.login(EMAIL_USER, EMAIL_PASS)
-        server.sendmail(EMAIL_USER, to_email, msg.as_string())
+class GuessWordPlugin:
+    name = "GuessWordPlugin"
+    def _init_(self):
+        self.words = ["apple", "mango", "grape", "lemon"]
+    def can_handle(self, msg):
+        return "guess" in msg.lower()
+    def handle(self, username, msg):
+        word = random.choice(self.words)
+        return f"🤔 Guess the word! Hint: It’s a {len(word)}-letter fruit starting with {word[0].upper()}"
 
-# ✅ User management
-def create_user(username, email, password):
-    conn = get_db()
-    c = conn.cursor()
-    hashed = generate_password_hash(password)
-    try:
-        c.execute("INSERT INTO auth_users (username, email, password) VALUES (?, ?, ?)",
-                  (username, email, hashed))
-        conn.commit()
-    except sqlite3.IntegrityError:
-        return False
-    finally:
-        conn.close()
-    return True
+PLUGINS = [QuizPlugin(), GuessWordPlugin()]
 
-def get_user(username):
-    conn = get_db()
-    c = conn.cursor()
-    c.execute("SELECT id, username, email, password, plan, daily_chats, last_chat_date FROM auth_users WHERE username=?", (username,))
-    user = c.fetchone()
-    conn.close()
-    return user
-
-# ✅ OTP management
-def create_otp(username, email):
-    otp = str(random.randint(100000, 999999))
-    expires = int(time.time()) + 600
-    conn = get_db()
-    c = conn.cursor()
-    c.execute("DELETE FROM otp_codes WHERE username=?", (username,))
-    c.execute("INSERT INTO otp_codes(username, otp, expires) VALUES(?,?,?)", (username, otp, expires))
-    conn.commit()
-    conn.close()
-    send_otp_email(email, username, otp)
-
-def verify_otp(username, otp_input):
-    conn = get_db()
-    c = conn.cursor()
-    c.execute("SELECT otp, expires FROM otp_codes WHERE username=?", (username,))
-    data = c.fetchone()
-    conn.close()
-    if not data:
-        return False, "No OTP found. Request again."
-    otp, expires = data
-    now = int(time.time())
-    if now > expires:
-        return False, "OTP expired. Please resend."
-    if otp != otp_input:
-        return False, "Invalid OTP."
-    return True, "OK"
-
-def reset_password(username, new_password):
-    conn = get_db()
-    c = conn.cursor()
-    hashed = generate_password_hash(new_password)
-    c.execute("UPDATE auth_users SET password=? WHERE username=?", (hashed, username))
-    conn.commit()
-    conn.close()
-
-# ✅ Chat logic
-def chatbot_reply(username, message):
-    jokes = [
-        "Why don’t skeletons fight each other? They don’t have the guts!",
-        "I told my computer I needed a break… it said 'No problem, I’ll go to sleep.'",
-    ]
-    fun_facts = [
-        "Honey never spoils. Archaeologists have eaten 3000-year-old honey!",
-        "Bananas are berries, but strawberries are not.",
-        "Did you know? Octopuses have three hearts!"
-    ]
-
-    save_chat(username, "user", message)
-    low = message.lower()
-
-    if "joke" in low:
-        reply = random.choice(jokes)
-    elif "fact" in low:
-        reply = random.choice(fun_facts)
-    elif "hello" in low or "hi" in low:
-        reply = f"Hello {username}! I’m here to help. Want a joke or a fun fact?"
-    else:
-        try:
-            reply = gpt_response(username, message)
-        except Exception as e:
-            print("GPT Error:", e)
-            reply = "I’m in offline mode (no GPT). Ask me for a joke or a fun fact! 🤖"
-
-    save_chat(username, "bot", reply)
-    return reply
-
-def gpt_response(username, message):
-    conn = get_db()
-    c = conn.cursor()
-    c.execute("SELECT role, content FROM chat_history WHERE username=? ORDER BY id DESC LIMIT 5", (username,))
-    history = c.fetchall()
-    conn.close()
-
-    messages = [{"role": "system", "content": "You are a friendly chatbot."}]
-    for role, content in reversed(history):
-        messages.append({"role": role, "content": content})
-    messages.append({"role": "user", "content": message})
-
-    res = client.chat.completions.create(
-        model="gpt-3.5-turbo",
-        messages=messages
-    )
-    return res.choices[0].message.content.strip()
-
+# ✅ DB helpers
 def save_chat(username, role, content):
     conn = get_db()
     c = conn.cursor()
-    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     c.execute("INSERT INTO chat_history(username, role, content, timestamp) VALUES (?,?,?,?)",
-              (username, role, content, timestamp))
+              (username, role, content, ts))
     conn.commit()
     conn.close()
 
@@ -214,16 +141,216 @@ def get_chat_history(username):
     conn = get_db()
     c = conn.cursor()
     c.execute("SELECT role, content, timestamp FROM chat_history WHERE username=? ORDER BY id ASC", (username,))
-    chats = c.fetchall()
+    rows = c.fetchall()
     conn.close()
-    return chats
+    return rows
 
-# ✅ Routes
+def normalize_text(txt):
+    """Lowercase, remove punctuation, and trim spaces for better matching."""
+    txt = txt.lower().strip()
+    txt = re.sub(r'[^\w\s]', '', txt)  # remove punctuation
+    return txt
+
+def save_knowledge(question, answer):
+    """Normalize question before saving to DB"""
+    question = normalize_text(question)
+    conn = get_db()
+    c = conn.cursor()
+    c.execute("INSERT OR REPLACE INTO bot_knowledge(question, answer) VALUES (?,?)", (question, answer))
+    conn.commit()
+    conn.close()
+
+def get_knowledge_answer(question):
+    """Retrieve answer from bot_knowledge table for a normalized question."""
+    norm_question = normalize_text(question)
+    conn = get_db()
+    c = conn.cursor()
+    c.execute("SELECT answer FROM bot_knowledge WHERE question=?", (norm_question,))
+    row = c.fetchone()
+    conn.close()
+    return row[0] if row else None
+
+# ✅ User management helpers
+def get_user(username):
+    conn = get_db()
+    c = conn.cursor()
+    c.execute("SELECT * FROM auth_users WHERE username=?", (username,))
+    row = c.fetchone()
+    conn.close()
+    return row
+
+def create_user(username, email, password):
+    conn = get_db()
+    c = conn.cursor()
+    hashed = generate_password_hash(password)
+    try:
+        c.execute("INSERT INTO auth_users(username, email, password, last_greeting_date) VALUES (?,?,?,?)",
+                  (username, email, hashed, ""))
+        conn.commit()
+        return True
+    except sqlite3.IntegrityError:
+        return False
+    finally:
+        conn.close()
+
+def update_last_greeting(username):
+    today = date.today().isoformat()
+    conn = get_db()
+    c = conn.cursor()
+    c.execute("UPDATE auth_users SET last_greeting_date=? WHERE username=?", (today, username))
+    conn.commit()
+    conn.close()
+
+def reset_password(username, new_pw):
+    conn = get_db()
+    c = conn.cursor()
+    hashed = generate_password_hash(new_pw)
+    c.execute("UPDATE auth_users SET password=? WHERE username=?", (hashed, username))
+    conn.commit()
+    conn.close()
+
+# ✅ OTP helpers
+def create_otp(username, email):
+    otp = str(random.randint(100000, 999999))
+    now = datetime.now().isoformat()
+    conn = get_db()
+    c = conn.cursor()
+    c.execute("INSERT INTO reset_otps(username, otp, created_at) VALUES (?,?,?)",
+              (username, otp, now))
+    conn.commit()
+    conn.close()
+    print(f"📩 OTP for {username} ({email}) = {otp}")  # Simulate email sending
+
+def verify_otp(username, otp_input):
+    conn = get_db()
+    c = conn.cursor()
+    c.execute("SELECT otp, created_at FROM reset_otps WHERE username=? ORDER BY id DESC LIMIT 1", (username,))
+    row = c.fetchone()
+    conn.close()
+    if not row:
+        return False, "No OTP found. Request again."
+    otp, created = row
+    if otp_input != otp:
+        return False, "Invalid OTP"
+    # Optional: check time validity (e.g. 5 min)
+    return True, "OTP verified"
+
+# ✅ Core chatbot logic
+def chatbot_reply(username, message):
+    save_chat(username, "user", message)
+    msg = message.lower()
+
+    cache_key = f"reply:{msg}"
+
+    # ✅ Only try cache if available
+    if cache:
+        cached = cache.get(cache_key)
+        if cached:
+            reply = cached.decode('utf-8') + " (cached)"
+            save_chat(username, "bot", reply)
+            return reply
+
+
+    # ✅ ALWAYS respond to "what is your name" or similar
+    if "your name" in msg or "who are you" in msg:
+        reply = "My name is SJ 🤖"
+        save_chat(username, "bot", reply)
+        return reply
+    # ✅ Greeting keywords
+    greetings = [
+        "hi", "hey", "hello", "yo", "sup", "whats up",
+        "what's up", "howdy", "hola", "heyy", "hiya",
+        "good morning", "good afternoon", "good evening",
+        "how are you", "how r u", "how are u", "how you doing"
+    ]
+
+    # ✅ Detect greetings (loose match)
+    if any(word in msg for word in greetings):
+        reply = random.choice([
+            f"Hey {username}! 👋 How’s your day going?",
+            f"Hello {username}! 😊 What can I help you with?",
+            f"Hi {username}! 👀 Want to hear a joke or a fun fact?",
+            f"Hey there! 🚀 I’m here for you."
+        ])
+        if cache:
+            cache.setex(cache_key, 3600, reply)
+        save_chat(username, "bot", reply)
+        return reply
+
+    # 🆕 Help for teaching
+    if "how do i teach" in msg or ("teach" in msg and "->" not in msg):
+        reply = (
+            "📚 To teach me something new, use this format:\n\n"
+            "teach: <question> -> <answer>\n\n"
+            "✅ Example:\n"
+            "teach: who is the president of Nigeria -> Bola Ahmed Tinubu\n"
+            "After that, if you ask who is the president of Nigeria, I’ll reply correctly!"
+        )
+        save_chat(username, "bot", reply)
+        return reply
+
+    # 2️⃣ Plugins
+    for plugin in PLUGINS:
+        if plugin.can_handle(msg):
+            reply = plugin.handle(username, msg)
+            if cache:
+                cache.setex(cache_key, 3600, reply)
+            save_chat(username, "bot", reply)
+            return reply
+
+    # 3️⃣ Learned knowledge
+    known_answer = get_knowledge_answer(msg)
+    if known_answer:
+        reply = known_answer
+        if cache:
+            cache.setex(cache_key, 3600, reply)
+        save_chat(username, "bot", reply)
+        return reply
+
+    # 4️⃣ Teach mode
+    if msg.startswith("teach:"):
+        try:
+            parts = message.split("->")
+            q_part = parts[0].replace("teach:", "").strip()
+            a_part = parts[1].strip()
+            save_knowledge(q_part, a_part)
+            reply = f"✅ Learned: '{q_part}' → '{a_part}'"
+        except:
+            reply = "To teach me: teach: question -> answer"
+        save_chat(username, "bot", reply)
+        return reply
+
+    # 5️⃣ Normal responses
+    if "hello" in msg or "hi" in msg:
+        reply = f"Hello {username}! 👋 Want a joke or a fun fact?"
+    elif "joke" in msg:
+        reply = random.choice(jokes)
+    elif "fact" in msg:
+        reply = random.choice(fun_facts)
+    else:
+        reply = "🤔 I’m not sure. You can teach me: teach: question -> answer"
+
+    # 6️⃣ Cache & return
+    if cache:
+        cache.setex(cache_key, 3600, reply)
+    save_chat(username, "bot", reply)
+    return reply
+
+## ---------------- ROUTES ---------------- #
 @app.route("/")
 def home():
     if "user" not in session:
         return redirect(url_for("login"))
-    return render_template("index.html", username=session["user"])
+
+    user_data = get_user(session["user"])
+    last_date = user_data[4] if user_data else ""
+    today = date.today().isoformat()
+    daily_greet = None
+    if last_date != today:
+        daily_greet = random.choice(fun_facts + jokes)
+        update_last_greeting(session["user"])
+
+    return render_template("index.html", username=session["user"], daily_greet=daily_greet)
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
@@ -234,8 +361,8 @@ def login():
 
         if not user:
             return render_template("login.html", error="User not found!")
-        
-        _, uname, email, hashed_pw, plan, daily_chats, last_chat_date = user
+
+        _, uname, email, hashed_pw, _ = user
         if check_password_hash(hashed_pw, password):
             session["user"] = username
             return redirect(url_for("home"))
@@ -305,38 +432,11 @@ def reset_password_page():
 def chat():
     if "user" not in session:
         return jsonify({"reply": "Session expired, please log in."})
-
-    username = session["user"]
-    conn = get_db()
-    c = conn.cursor()
-    c.execute("SELECT plan, daily_chats, last_chat_date FROM auth_users WHERE username=?", (username,))
-    plan_data = c.fetchone()
-    plan, daily_chats, last_chat_date = plan_data
-
-    today = datetime.now().strftime("%Y-%m-%d")
-    # Reset daily limit if new day
-    if last_chat_date != today:
-        daily_chats = 0
-        c.execute("UPDATE auth_users SET daily_chats=0, last_chat_date=? WHERE username=?", (today, username))
-        conn.commit()
-
-    # Free users limited
-    if plan == "free" and daily_chats >= 10:
-        conn.close()
-        return jsonify({"reply": "🚀 You’ve reached today’s free chat limit! Upgrade to Premium for unlimited chats → /upgrade"})
-
-    # Process chat
     message = request.json["message"]
-    reply = chatbot_reply(username, message)
-
-    # Update usage
-    c.execute("UPDATE auth_users SET daily_chats=daily_chats+1, last_chat_date=? WHERE username=?", (today, username))
-    conn.commit()
-    conn.close()
-
+    reply = chatbot_reply(session["user"], message)
     return jsonify({"reply": reply})
 
-@app.route("/history")
+@app.route('/history')
 def history():
     if 'user' not in session:
         return redirect(url_for('login'))
@@ -350,40 +450,29 @@ def clear_history():
         return redirect(url_for('login'))
     username = session['user']
     conn = get_db()
-    conn.execute("DELETE FROM chat_history WHERE username=?", (username,))
+    c = conn.cursor()
+    c.execute("DELETE FROM chat_history WHERE username=?", (username,))
     conn.commit()
     conn.close()
     return redirect(url_for('history'))
 
-# ✅ Monetization Routes
-@app.route("/upgrade")
-def upgrade():
-    if "user" not in session:
-        return redirect(url_for("login"))
-    return render_template("upgrade.html", username=session["user"])
+# ✅ WebSocket handlers
+@socketio.on('connect')
+def ws_connect():
+    print("✅ Client connected!")
+    emit("bot_reply", "🤖 SJ is online ! Say hi 👋")
 
-@app.route("/verify_payment", methods=["POST"])
-def verify_payment():
-    if "user" not in session:
-        return jsonify({"success": False, "message": "Login required"})
+@socketio.on('user_message')
+def ws_user_message(msg):
+    print(f"📩 WS message: {msg}")
+    username = session.get("user", "guest")
+    reply = chatbot_reply(username, msg)
+    emit('bot_reply', reply)
 
-    ref = request.json["ref"]
-    headers = {"Authorization": f"Bearer {PAYSTACK_SECRET}"}
-    res = requests.get(f"https://api.paystack.co/transaction/verify/{ref}", headers=headers)
-    data = res.json()
+@socketio.on('disconnect')
+def ws_disconnect():
+    print("❌ Client disconnected!")
 
-    if data["status"] and data["data"]["status"] == "success":
-        username = session["user"]
-        conn = get_db()
-        conn.execute("UPDATE auth_users SET plan='premium' WHERE username=?", (username,))
-        conn.commit()
-        conn.close()
-        return jsonify({"success": True, "message": "✅ Payment successful! You’re now Premium!"})
-    else:
-        return jsonify({"success": False, "message": "❌ Payment failed!"})
-
+# ✅ Run server
 if __name__ == "__main__":
-    app.run(debug=True)
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)
+    socketio.run(app, debug=True)

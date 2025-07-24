@@ -1,0 +1,1515 @@
+teach: what is the capital of Nigeria -> Abuja
+teach: who is the president of Nigeria -> Bola Ahmed Tinubu
+teach: what is the currency of Nigeria -> Naira
+teach: what is the largest country in the world -> Russia
+teach: what is the smallest country in the world -> Vatican City
+teach: what is the largest continent -> Asia
+teach: what is the smallest continent -> Australia
+teach: what is the largest ocean -> Pacific Ocean
+teach: what is the smallest ocean -> Arctic Ocean
+teach: what is the hottest desert -> Sahara Desert
+teach: what is the largest rainforest -> Amazon Rainforest
+teach: what is the longest river in the world -> Nile River
+teach: what is the tallest mountain -> Mount Everest
+teach: what is the deepest ocean trench -> Mariana Trench
+teach: which country is called the Land of the Rising Sun -> Japan
+teach: which country is called the Land of the Midnight Sun -> Norway
+teach: which country is famous for tulips -> Netherlands
+teach: which country is known for pyramids -> Egypt
+teach: which country has the Eiffel Tower -> France
+teach: which country is home to Mount Fuji -> Japan
+teach: which country has the Taj Mahal -> India
+teach: which country has the Statue of Liberty -> USA
+teach: which country invented pizza -> Italy
+teach: which country invented chocolate -> Mexico
+teach: which country invented paper -> China
+teach: which country invented fireworks -> China
+teach: what is the most visited country in the world -> France
+teach: what is the largest city by population -> Tokyo, Japan
+teach: what is the driest continent -> Antarctica
+teach: what is the wettest continent -> South America
+teach: what continent has the most countries -> Africa
+teach: what is the longest wall in the world -> The Great Wall of China
+teach: what is the largest waterfall in the world -> Victoria Falls
+teach: what is the largest volcano in the world -> Mauna Loa, Hawaii
+teach: what is the national sport of Canada -> Ice Hockey
+teach: what is the national sport of India -> Field Hockey
+teach: what is the coldest place on Earth -> Antarctica
+teach: what is the hottest place on Earth -> Death Valley, USA
+
+teach: which planet is closest to the sun -> Mercury
+teach: which planet is known as the Red Planet -> Mars
+teach: which planet is the largest in the Solar System -> Jupiter
+teach: which planet is called the Morning Star -> Venus
+teach: how many planets are in the Solar System -> 8 planets
+teach: how long does Earth take to orbit the Sun -> 365 days
+teach: how long does Earth take to rotate once -> 24 hours
+teach: what is the closest star to Earth -> The Sun
+teach: what is the Milky Way -> The galaxy that contains our Solar System
+teach: what is a black hole -> A region in space where gravity is so strong even light cannot escape
+teach: what is the largest moon of Jupiter -> Ganymede
+teach: what is the largest moon of Saturn -> Titan
+teach: how many moons does Mars have -> Two, Phobos and Deimos
+teach: how many moons does Earth have -> One
+teach: what is the speed of light -> 299,792 kilometers per second
+teach: what is the hottest star -> Wolf-Rayet stars
+teach: what is the coldest planet -> Neptune
+
+teach: who developed the theory of relativity -> Albert Einstein
+teach: who discovered gravity -> Isaac Newton
+teach: who discovered penicillin -> Alexander Fleming
+teach: who invented the telephone -> Alexander Graham Bell
+teach: who invented the airplane -> The Wright Brothers
+teach: who invented the light bulb -> Thomas Edison
+teach: what vitamin do you get from sunlight -> Vitamin D
+teach: what organ purifies blood -> Kidneys
+teach: what organ produces insulin -> Pancreas
+teach: what organ controls emotions -> Brain
+teach: what is the rarest blood type -> AB negative
+teach: what is the strongest bone in the human body -> Femur
+teach: what is the smallest bone in the body -> Stapes in the ear
+teach: how many teeth does an adult human have -> 32 teeth
+teach: how many taste buds does a human have -> Around 10,000
+teach: how many muscles in the human body -> About 600 muscles
+teach: how many chromosomes do humans have -> 46 chromosomes
+teach: how much blood is in the human body -> About 5 liters
+teach: how many hearts does an octopus have -> Three hearts
+teach: what is the most common gas in Earth’s atmosphere -> Nitrogen
+teach: what is the main gas in the Sun -> Hydrogen
+
+teach: what is the fastest land animal -> Cheetah
+teach: what is the slowest animal -> Sloth
+teach: what is the largest mammal -> Blue Whale
+teach: what is the tallest animal -> Giraffe
+teach: what is the fastest bird -> Peregrine Falcon
+teach: what is the largest reptile -> Saltwater Crocodile
+teach: what animal can live the longest -> Bowhead Whale
+teach: what is the only mammal that can fly -> Bat
+teach: which bird cannot fly -> Ostrich
+teach: what animal is known as the ship of the desert -> Camel
+teach: which animal is known for playing dead -> Opossum
+
+teach: what does AI mean -> Artificial Intelligence
+teach: what does CPU mean -> Central Processing Unit
+teach: what does GPU mean -> Graphics Processing Unit
+teach: what does RAM mean -> Random Access Memory
+teach: what does ROM mean -> Read Only Memory
+teach: what does SSD mean -> Solid State Drive
+teach: what does URL mean -> Uniform Resource Locator
+teach: what does IP mean -> Internet Protocol
+teach: what does VPN mean -> Virtual Private Network
+teach: what does SEO mean -> Search Engine Optimization
+teach: what does SQL mean -> Structured Query Language
+teach: what does API mean -> Application Programming Interface
+teach: what does JSON mean -> JavaScript Object Notation
+teach: what does HTTP stand for -> Hypertext Transfer Protocol
+teach: what does HTTPS mean -> Secure Hypertext Transfer Protocol
+teach: what is the first search engine on the internet -> Archie
+teach: what is the first computer in history -> ENIAC
+teach: what is the most popular programming language -> Python
+teach: what is the main language for web development -> HTML, CSS, JavaScript
+teach: who invented the World Wide Web -> Tim Berners-Lee
+teach: who is the founder of Tesla -> Elon Musk
+teach: who is the founder of Amazon -> Jeff Bezos
+teach: who is the founder of Google -> Larry Page and Sergey Brin
+teach: who is the founder of Apple -> Steve Jobs, Steve Wozniak, Ronald Wayne
+
+teach: how many players in a football team -> 11 players
+teach: how many players in a basketball team -> 5 players
+teach: how many players in a volleyball team -> 6 players
+teach: what is the most popular sport in the world -> Football (Soccer)
+teach: who has won the most World Cups -> Brazil
+teach: who is the fastest man in the world -> Usain Bolt
+teach: who has the most Olympic gold medals -> Michael Phelps
+teach: what is the biggest football club in the world -> Real Madrid
+teach: what is the most expensive movie ever made -> Avengers: Endgame
+teach: who is the most followed person on Instagram -> Cristiano Ronaldo
+
+teach: honey never spoils true or false -> True, it can last thousands of years
+teach: bananas are berries true or false -> True
+teach: octopuses have how many hearts -> Three
+teach: sharks existed before trees true or false -> True
+teach: there are more stars than grains of sand true or false -> True
+teach: wombat poop is cube shaped true or false -> True
+teach: what color is a polar bear’s skin -> Black
+teach: which fruit floats on water -> Apple
+teach: what is the only fruit with seeds outside -> Strawberry
+teach: what is the only metal that is liquid at room temperature -> Mercury
+
+teach: who was the first president of the USA -> George Washington
+teach: who was the first man on the Moon -> Neil Armstrong
+teach: when did World War II end -> 1945
+teach: when did the Titanic sink -> 1912
+teach: who built the pyramids of Giza -> The ancient Egyptians
+teach: who painted the Mona Lisa -> Leonardo da Vinci
+teach: who wrote Hamlet -> William Shakespeare
+teach: who wrote the Quran -> It was revealed to Prophet Muhammad
+teach: who wrote the Bible -> It was written by multiple prophets and disciples
+
+teach: what is the formula for water -> H2O
+teach: what is the chemical symbol for gold -> Au
+teach: what is the chemical symbol for oxygen -> O
+teach: what is the chemical formula of carbon dioxide -> CO2
+teach: what is the pH of pure water -> 7
+teach: what is the boiling point of water in Celsius -> 100°C
+teach: what is the freezing point of water in Celsius -> 0°C
+teach: what gas do plants release during photosynthesis -> Oxygen
+teach: what gas do humans exhale -> Carbon dioxide
+teach: what gas do plants need for photosynthesis -> Carbon dioxide
+teach: what is the powerhouse of the cell -> Mitochondria
+teach: what part of the cell contains genetic material -> Nucleus
+teach: what is the basic unit of life -> Cell
+teach: what is the largest organ in the human body -> Skin
+teach: what organ helps in breathing -> Lungs
+teach: what organ pumps blood in the body -> Heart
+teach: what organ helps in digestion by producing bile -> Liver
+teach: what is the hardest natural substance on Earth -> Diamond
+teach: what is the most abundant gas in Earth’s atmosphere -> Nitrogen
+teach: what is the second most abundant gas in Earth’s atmosphere -> Oxygen
+
+teach: what is Newton’s first law of motion -> An object in motion stays in motion unless acted upon by an external force
+teach: what is Newton’s second law of motion -> Force equals mass times acceleration (F = ma)
+teach: what is Newton’s third law of motion -> For every action there is an equal and opposite reaction
+teach: what is the speed of sound in air -> 343 meters per second
+teach: what is the unit of force -> Newton
+teach: what is the unit of energy -> Joule
+teach: what is the unit of power -> Watt
+teach: what is the SI unit of temperature -> Kelvin
+teach: what is the SI unit of electric current -> Ampere
+teach: what is the SI unit of mass -> Kilogram
+teach: what is the SI unit of time -> Second
+teach: what is the SI unit of length -> Meter
+
+teach: what is the largest planet in the solar system -> Jupiter
+teach: what is the smallest planet in the solar system -> Mercury
+teach: which planet has the most moons -> Saturn
+teach: which planet has rings -> Saturn
+teach: which planet has a day longer than a year -> Venus
+teach: which planet rotates on its side -> Uranus
+teach: what is the nearest galaxy to the Milky Way -> Andromeda Galaxy
+teach: what is the name of our galaxy -> Milky Way
+teach: what is the closest planet to Earth -> Venus
+teach: what is the brightest star in the night sky -> Sirius
+teach: what is the name of the first satellite in space -> Sputnik 1
+teach: who was the first woman in space -> Valentina Tereshkova
+teach: who was the first man in space -> Yuri Gagarin
+
+teach: what is the largest desert on Earth -> Sahara Desert
+teach: what is the largest lake in the world -> Caspian Sea
+teach: what is the largest freshwater lake -> Lake Superior
+teach: what is the longest mountain range -> Andes Mountains
+teach: what is the largest island in the world -> Greenland
+teach: what is the deepest lake in the world -> Lake Baikal
+teach: what is the largest bay in the world -> Bay of Bengal
+
+teach: what is the main language of Brazil -> Portuguese
+teach: what is the main language of Argentina -> Spanish
+teach: what is the main language of China -> Mandarin Chinese
+teach: what is the most spoken language in the world -> English
+teach: what is the second most spoken language in the world -> Mandarin Chinese
+
+teach: what is the process by which plants make food -> Photosynthesis
+teach: what is the green pigment in plants called -> Chlorophyll
+teach: what process converts liquid water into gas -> Evaporation
+teach: what process converts gas into liquid -> Condensation
+teach: what process converts solid directly into gas -> Sublimation
+teach: what process breaks rocks into smaller pieces -> Weathering
+teach: what process moves sediments from one place to another -> Erosion
+
+teach: what is the study of living things called -> Biology
+teach: what is the study of the Earth called -> Geology
+teach: what is the study of stars and planets called -> Astronomy
+teach: what is the study of the mind and behavior called -> Psychology
+teach: what is the study of fossils called -> Paleontology
+teach: what is the study of the ocean called -> Oceanography
+teach: what is the study of animals called -> Zoology
+teach: what is the study of plants called -> Botany
+teach: what is the study of insects called -> Entomology
+teach: what is the study of earthquakes called -> Seismology
+
+teach: what is the fastest growing plant -> Bamboo
+teach: what is the oldest living tree -> Methuselah Tree
+teach: what is the largest flower in the world -> Rafflesia arnoldii
+teach: what is the smallest bird in the world -> Bee Hummingbird
+teach: what is the largest bird in the world -> Ostrich
+
+teach: what is the largest human organ inside the body -> Liver
+teach: what is the main function of red blood cells -> Carry oxygen
+teach: what is the main function of white blood cells -> Fight infection
+teach: what is the main function of platelets -> Help in blood clotting
+teach: what is the main function of the kidneys -> Filter waste from blood
+teach: what part of the brain controls balance -> Cerebellum
+teach: what part of the brain controls breathing -> Medulla oblongata
+
+teach: what is the main source of energy for the Earth -> The Sun
+teach: what is renewable energy -> Energy from sources that can be replenished naturally
+teach: what is non-renewable energy -> Energy from sources that cannot be replaced quickly
+teach: what is the cleanest source of energy -> Solar energy
+teach: what is the main greenhouse gas -> Carbon dioxide
+teach: what causes acid rain -> Sulfur dioxide and nitrogen oxides in the atmosphere
+
+teach: who is known as the father of modern physics -> Albert Einstein
+teach: who is known as the father of chemistry -> Antoine Lavoisier
+teach: who is known as the father of modern medicine -> Hippocrates
+teach: who is known as the father of genetics -> Gregor Mendel
+teach: who is known as the father of evolution -> Charles Darwin
+teach: who is known as the father of computer science -> Alan Turing
+teach: who invented calculus -> Isaac Newton and Gottfried Wilhelm Leibniz
+teach: who invented the periodic table -> Dmitri Mendeleev
+teach: who invented radio -> Guglielmo Marconi
+teach: who invented dynamite -> Alfred Nobel
+
+teach: what is the art of war -> A famous military strategy book written by Sun Tzu
+teach: who wrote the art of war -> Sun Tzu
+teach: what is guerrilla warfare -> A form of irregular warfare with small, mobile groups using ambushes
+teach: what is trench warfare -> A type of combat in which opposing troops fight from trenches
+teach: what is blitzkrieg -> A German “lightning war” strategy using fast, coordinated attacks
+teach: what is a siege -> A military operation to surround and isolate an enemy stronghold
+teach: what is a flanking maneuver -> Attacking the enemy from the side
+teach: what is scorched earth policy -> Destroying resources so the enemy cannot use them
+teach: what is a war of attrition -> A strategy to wear down the enemy over time
+teach: what is a pincer movement -> A double envelopment attack from two sides
+teach: what is naval warfare -> Combat conducted on the sea
+teach: what is asymmetrical warfare -> War between unequal forces using unconventional tactics
+teach: what is psychological warfare -> Using propaganda or fear to weaken enemy morale
+teach: what is total war -> A war that affects all aspects of society, not just the military
+teach: what is a decoy strategy in war -> A tactic to mislead the enemy about real intentions
+teach: what is military intelligence -> Information about enemy forces and strategies
+teach: what is counterinsurgency -> Military actions taken to combat guerrilla fighters
+teach: what is the difference between tactics and strategy -> Tactics are short-term actions; strategy is the long-term plan
+
+teach: who was Alexander the Great -> A Macedonian king who created one of the largest empires in ancient history
+teach: who was Napoleon Bonaparte -> A French military leader and emperor known for his conquests
+teach: who was Julius Caesar -> A Roman general and dictator who expanded the Roman Empire
+teach: who was Hannibal Barca -> A Carthaginian general famous for using elephants in war
+teach: who was Genghis Khan -> A Mongol leader who created the largest land empire in history
+teach: who was Sun Tzu -> An ancient Chinese military strategist and philosopher
+teach: who was Erwin Rommel -> A German general known as the Desert Fox in World War II
+teach: who was Dwight D Eisenhower -> The Supreme Allied Commander in World War II
+
+teach: what was the Trojan War -> A legendary conflict between Troy and Greece described in Greek mythology
+teach: what was the Peloponnesian War -> A war between Athens and Sparta in ancient Greece
+teach: what was the Battle of Thermopylae -> A famous last stand of 300 Spartans against the Persian army
+teach: what was the Battle of Marathon -> A Greek victory over Persia in 490 BCE
+teach: what was the Punic Wars -> A series of wars between Rome and Carthage
+teach: what was the Hundred Years War -> A conflict between England and France from 1337 to 1453
+teach: what was the Thirty Years War -> A religious conflict in Europe from 1618 to 1648
+teach: what was the American Revolutionary War -> The war in which the American colonies gained independence from Britain
+teach: what was the US Civil War -> A war between the northern Union states and southern Confederate states from 1861-1865
+teach: what was World War I -> A global conflict from 1914 to 1918 also known as the Great War
+teach: what was World War II -> A global war from 1939 to 1945 involving most major nations
+teach: what was the Cold War -> A period of political tension between the US and USSR after World War II
+teach: what was the Vietnam War -> A war between communist North Vietnam and South Vietnam supported by the US
+teach: what was the Korean War -> A war between North and South Korea from 1950 to 1953
+
+teach: what was the D Day invasion -> The Allied invasion of Normandy on June 6, 1944 during World War II
+teach: what was the Battle of Stalingrad -> A major Soviet victory against Nazi Germany in World War II
+teach: what was the Battle of Midway -> A turning point naval battle in the Pacific during World War II
+teach: what was the Battle of Waterloo -> The final defeat of Napoleon in 1815
+teach: what was the Battle of Hastings -> A 1066 battle where William the Conqueror defeated the English
+teach: what was the Battle of Gettysburg -> A turning point battle in the US Civil War
+teach: what was the Battle of the Bulge -> A last German offensive in World War II
+
+teach: what is NATO -> A military alliance called the North Atlantic Treaty Organization
+teach: what is the UN peacekeeping force -> Military forces sent by the United Nations to maintain peace
+teach: what is the Geneva Convention -> A set of international laws for humanitarian treatment during war
+teach: what is the Hague Convention -> A series of agreements on the laws of war
+teach: what is a ceasefire -> A temporary suspension of fighting
+teach: what is a demilitarized zone -> An area where military forces are not allowed
+teach: what is a treaty of surrender -> A formal agreement to end a war
+teach: what is an armistice -> A temporary end to fighting before a peace treaty is signed
+
+teach: what is a drone strike -> An attack carried out using an unmanned aerial vehicle
+teach: what is cyber warfare -> The use of digital attacks in military conflict
+teach: what is a ballistic missile -> A missile guided during launch and then following a free-fall trajectory
+teach: what is a stealth aircraft -> A plane designed to avoid radar detection
+teach: what is a tank -> A heavily armored combat vehicle with large guns
+teach: what is a warship -> A naval ship designed for combat
+teach: what is a fighter jet -> A fast military aircraft designed for air-to-air combat
+teach: what is a submarine -> A watercraft that can operate underwater
+
+teach: what was Operation Desert Storm -> The combat phase of the Gulf War in 1991
+teach: what was Operation Overlord -> The codename for the Normandy landings in World War II
+teach: what was Operation Barbarossa -> Nazi Germany’s invasion of the Soviet Union in 1941
+teach: what was Operation Market Garden -> A failed Allied operation in World War II
+teach: what was Operation Rolling Thunder -> A US bombing campaign during the Vietnam War
+
+teach: what is military strategy -> The overall plan to achieve victory in war
+teach: what is military tactics -> The specific maneuvers and actions in battle
+teach: what is logistics in the military -> The planning of supply, transport, and equipment
+teach: what is chain of command -> The hierarchy of authority in the military
+teach: what is rules of engagement -> Guidelines for when and how soldiers can fight
+teach: what is a reconnaissance mission -> A mission to gather intelligence about the enemy
+teach: what is a commando raid -> A small, quick, specialized attack mission
+teach: what is an amphibious assault -> A military attack launched from the sea onto land
+
+teach: what is modern warfare -> Warfare using advanced technology such as drones, cyber attacks, and precision weapons
+teach: what is hybrid warfare -> A mix of conventional, irregular, and cyber warfare
+teach: what is electronic warfare -> The use of electromagnetic signals to disrupt enemy communications or radar
+teach: what is cyber warfare -> Attacks on digital networks to disable or gather intelligence
+teach: what is a precision-guided missile -> A missile that can hit a target accurately using guidance systems
+teach: what is a drone strike -> A remote attack using an unmanned aerial vehicle
+teach: what is stealth technology -> Technology that makes aircraft or ships harder to detect by radar
+teach: what is a hypersonic missile -> A missile that travels faster than Mach 5
+teach: what is a nuclear triad -> Land-based missiles, submarine-launched missiles, and strategic bombers
+teach: what is MAD in nuclear strategy -> Mutual Assured Destruction, a deterrent strategy using nuclear weapons
+teach: what is a special forces unit -> Elite military units trained for covert or high-risk missions
+teach: what is psychological operations in the military -> Using propaganda to influence enemy morale and behavior
+teach: what is asymmetric warfare -> A conflict between a strong army and a weaker opponent using unconventional tactics
+teach: what is counterterrorism -> Military or police actions to prevent terrorism
+teach: what is a no-fly zone -> An area where military aircraft are banned
+teach: what is urban warfare -> Combat in cities and built-up areas
+teach: what is an insurgency -> A rebellion or uprising against an established government
+teach: what is counterinsurgency -> Military efforts to defeat a rebellion or guerrilla movement
+
+teach: what is the CIA -> The Central Intelligence Agency, the US intelligence agency
+teach: what is the FBI -> The Federal Bureau of Investigation, US domestic security and law enforcement
+teach: what is the NSA -> The National Security Agency, responsible for signals intelligence
+teach: what is the KGB -> The Soviet Union’s former secret police and intelligence agency
+teach: what is the FSB -> The Russian Federation’s main security agency
+teach: what is MI6 -> The UK’s Secret Intelligence Service for foreign intelligence
+teach: what is MI5 -> The UK’s domestic security service
+teach: what is Mossad -> Israel’s intelligence agency
+teach: what is the DGSE -> France’s external intelligence agency
+teach: what is Interpol -> An international police organization that coordinates law enforcement worldwide
+teach: what is espionage -> The act of spying to gather secret information
+teach: what is counterintelligence -> Efforts to stop enemy spying
+teach: what is a sleeper agent -> A spy who lives undercover for years until activated
+teach: what is a double agent -> A spy who works for two opposing sides
+teach: what is codebreaking -> Decoding secret messages or encryption
+teach: what is signals intelligence -> Gathering intelligence from electronic communications
+teach: what is human intelligence -> Information collected from human sources
+teach: what is a black ops mission -> A secret operation not officially acknowledged by the government
+
+teach: what was the Cold War -> A period of political tension and arms race between the US and USSR from 1947 to 1991
+teach: what was the Cuban Missile Crisis -> A 1962 standoff between the US and USSR over nuclear missiles in Cuba
+teach: what was the Gulf War -> A 1990-1991 conflict where a US-led coalition liberated Kuwait from Iraq
+teach: what was the Iraq War -> A 2003 invasion of Iraq by the US and allies to remove Saddam Hussein
+teach: what was the War in Afghanistan -> A 2001-2021 war fought by the US and allies against the Taliban
+teach: what is the Syrian Civil War -> An ongoing conflict in Syria that began in 2011
+teach: what is the Russia Ukraine war -> A war that began in 2022 with Russia’s invasion of Ukraine
+teach: what is the War on Terror -> A global campaign launched by the US after the 9/11 attacks
+teach: what is the Israeli Palestinian conflict -> A long-standing conflict over land and sovereignty in the Middle East
+teach: what is the Rwandan genocide -> A 1994 mass killing of Tutsis by Hutus in Rwanda
+teach: what was the Kosovo War -> A conflict in the late 1990s between Serbians and ethnic Albanians
+teach: what was the Falklands War -> A 1982 war between the UK and Argentina over the Falkland Islands
+
+teach: what is NATO -> The North Atlantic Treaty Organization, a military alliance of Western countries
+teach: what is the Warsaw Pact -> A Cold War military alliance of Soviet-aligned countries
+teach: what is the European Union military -> Collaborative defense forces of EU nations
+teach: what is the United Nations Security Council -> A UN body responsible for maintaining international peace
+teach: what are UN peacekeepers -> Soldiers deployed by the UN to maintain peace after conflicts
+teach: what is a peace treaty -> A formal agreement to end a war
+teach: what is an armistice -> A temporary stop to fighting before a formal treaty
+teach: what is a military coup -> A sudden overthrow of a government by the military
+teach: what is martial law -> Military control over civilian areas during an emergency
+
+teach: what is a spy satellite -> A satellite used for surveillance and intelligence gathering
+teach: what is SIGINT -> Signals Intelligence, gathering info from electronic signals
+teach: what is HUMINT -> Human Intelligence, information from people
+teach: what is cyber espionage -> Hacking digital systems to steal information
+teach: what is cryptography -> The practice of secure communication through codes
+teach: what is steganography -> Hiding secret data inside other files or images
+teach: what is a covert operation -> A secret mission to achieve political or military goals
+teach: what is an exfiltration in espionage -> Extracting an agent or important person from enemy territory
+teach: what is a honeypot in intelligence -> A trap to lure and catch enemy spies
+
+teach: who was James Bond based on -> Fictional but inspired by real British intelligence officers
+teach: who was Mata Hari -> A famous World War I spy executed for espionage
+teach: who was Aldrich Ames -> A CIA officer who spied for the Soviet Union
+teach: who was Richard Sorge -> A Soviet spy who warned about Nazi Germany’s invasion
+teach: who was Kim Philby -> A British double agent who worked for the USSR
+teach: who was Edward Snowden -> A whistleblower who leaked NSA surveillance secrets
+
+teach: what is the Patriot Act -> A US law expanding surveillance powers after 9/11
+teach: what is drone surveillance -> Using unmanned aerial vehicles for spying
+teach: what is biometric surveillance -> Tracking people using facial recognition or fingerprints
+teach: what is a kill list -> A classified list of enemy targets for elimination
+teach: what is extraordinary rendition -> Secretly transferring suspects to another country for interrogation
+teach: what is black site detention -> Secret prisons used for high-profile detainees
+teach: what is a war crime -> A violation of the laws of war, like targeting civilians
+teach: what is the International Criminal Court -> A court that prosecutes war crimes and crimes against humanity
+
+teach: what is 4th generation warfare -> Warfare that blurs the lines between military and civilian combatants
+teach: what is 5th generation warfare -> Information and psychological warfare with cyber and AI elements
+teach: what is a cyberattack on infrastructure -> A hack that disables power, water, or communication systems
+teach: what is an EMP weapon -> An electromagnetic pulse weapon that disables electronics
+teach: what is a biological weapon -> A weapon that uses viruses or bacteria to cause harm
+teach: what is a chemical weapon -> A weapon that uses toxic chemicals to kill or injure
+teach: what is the Geneva Protocol -> A treaty banning chemical and biological weapons
+
+teach: what is autonomous drone warfare -> The use of AI-powered drones that can select and attack targets without human control
+teach: what is AI targeting in warfare -> Artificial intelligence analyzing data to identify and prioritize enemy targets
+teach: what is swarm drone technology -> A group of drones working together like a swarm to overwhelm defenses
+teach: what is an autonomous killer robot -> A fully automated weapon that can attack without human input
+teach: what is Project Maven -> A US military AI project for analyzing drone footage
+teach: what is LAWS in warfare -> Lethal Autonomous Weapon Systems that operate with minimal human control
+teach: what is AI-enabled cyber warfare -> Using machine learning to detect, exploit, or defend against cyber threats
+teach: what is predictive warfare -> Using AI and big data to predict enemy actions before they happen
+teach: what is algorithmic surveillance -> Automated monitoring of data to detect threats
+teach: what is a deepfake attack -> Using AI-generated fake videos to spread disinformation
+teach: what is an autonomous surveillance drone -> A drone that patrols and spies without direct human control
+
+teach: what is spycraft -> The techniques and tools used by spies to gather intelligence
+teach: what is a dead drop in espionage -> A secret location where spies exchange messages without meeting
+teach: what is a brush pass -> A quick exchange of information between spies in public without detection
+teach: what is a cutout in intelligence -> An intermediary used to pass messages between spies without direct contact
+teach: what is a legend in espionage -> A fully developed fake identity used by a spy
+teach: what is tradecraft -> Professional spy techniques for avoiding detection
+teach: what is a safe house -> A secret location used for hiding agents or meetings
+teach: what is surveillance detection -> Methods spies use to see if they are being followed
+teach: what is a hollow coin in spycraft -> A fake coin used to hide microfilm or messages
+teach: what is microdot technology -> Miniaturizing documents into a tiny dot for secret transport
+teach: what is a cipher -> A method of encrypting secret messages
+teach: what is a one time pad -> An unbreakable encryption method using random keys
+teach: what is a honey trap -> Using romance or seduction to compromise a target
+teach: what is a covert listening device -> A hidden bug used to record conversations
+teach: what is a mole in intelligence -> A spy who infiltrates an enemy agency
+teach: what is a handler in espionage -> The agent who manages and controls a spy
+teach: what is an asset in intelligence -> A person who secretly provides information
+teach: what is an exfiltration plan -> A strategy for extracting an agent from enemy territory
+
+teach: what is the GRU -> Russia’s military intelligence agency
+teach: what is the SVR -> Russia’s foreign intelligence service
+teach: what is the BND -> Germany’s foreign intelligence agency
+teach: what is the ASIS -> Australia’s Secret Intelligence Service
+teach: what is the RAW -> India’s Research and Analysis Wing for intelligence
+teach: what is the ISI -> Pakistan’s Inter-Services Intelligence agency
+teach: what is the MSS -> China’s Ministry of State Security
+teach: what is the DIA -> The US Defense Intelligence Agency
+teach: what is the NRO -> The US National Reconnaissance Office for spy satellites
+teach: what is Five Eyes -> An intelligence-sharing alliance between the US, UK, Canada, Australia, and New Zealand
+teach: what is Echelon -> A global signals intelligence network run by Five Eyes countries
+teach: what is PRISM -> A US surveillance program that collects online data
+teach: what is Tempora -> A British surveillance program intercepting internet traffic
+teach: what is XKeyscore -> An NSA tool for searching global internet data
+
+teach: what is the Cambridge Five -> A group of British double agents who spied for the Soviet Union
+teach: who was Julius and Ethel Rosenberg -> American spies executed for passing nuclear secrets to the USSR
+teach: who was Oleg Gordievsky -> A KGB officer who defected to the UK
+teach: who was Sidney Reilly -> A British spy known as the Ace of Spies
+teach: who was Francis Gary Powers -> A US pilot shot down during the U-2 spy plane incident
+teach: what was Operation Gladio -> A secret NATO stay-behind network during the Cold War
+teach: what was Operation Paperclip -> A US program to recruit German scientists after WWII
+teach: what was MKUltra -> A secret CIA mind-control experiment program
+teach: what was Operation Ajax -> A CIA and MI6 operation to overthrow Iran’s prime minister in 1953
+teach: what was Operation Cyclone -> A CIA program to arm Afghan fighters during the Soviet invasion
+teach: what was the Bay of Pigs Invasion -> A failed CIA-backed attempt to overthrow Fidel Castro in Cuba
+
+teach: what is a cyber kill chain -> The stages of a cyber attack from reconnaissance to execution
+teach: what is zero day exploit -> A software vulnerability unknown to the vendor and used by hackers
+teach: what is Stuxnet -> A computer worm used to sabotage Iran’s nuclear program
+teach: what is Pegasus spyware -> Advanced spyware that can hack smartphones
+teach: what is a botnet -> A network of infected computers controlled by hackers
+teach: what is ransomware -> Malware that encrypts files and demands payment to unlock them
+teach: what is a cyber false flag -> A hacking operation designed to look like it was done by another country
+teach: what is information warfare -> The use of propaganda and data manipulation to influence public opinion
+teach: what is social engineering in hacking -> Tricking people into revealing confidential information
+teach: what is deep surveillance -> AI systems scanning massive data for patterns and threats
+
+teach: what is geospatial intelligence -> Intelligence gathered from satellite images and maps
+teach: what is open source intelligence -> Information collected from publicly available sources
+teach: what is technical intelligence -> Info from analyzing enemy weapons and equipment
+teach: what is economic espionage -> Stealing trade secrets or corporate data for national advantage
+teach: what is a spy balloon -> A balloon used for aerial reconnaissance
+teach: what is a U-2 spy plane -> A high-altitude reconnaissance aircraft
+teach: what is a stealth drone -> A drone designed to evade radar detection
+teach: what is an autonomous submarine drone -> An unmanned underwater vehicle for covert operations
+
+teach: what is future warfare -> Warfare involving AI, quantum computing, directed energy weapons, and autonomous systems
+teach: what is a railgun weapon -> A gun using electromagnetic force to fire projectiles at high speed
+teach: what is a laser weapon system -> A weapon that uses high-energy lasers to destroy targets
+teach: what is space warfare -> Military operations in outer space including satellite attacks
+teach: what is satellite jamming -> Disrupting enemy satellite communications
+teach: what is orbital strike capability -> The ability to attack Earth targets from space
+teach: what is quantum encryption -> A theoretically unbreakable method of secure communication
+teach: what is bio-enhanced soldiers -> Soldiers enhanced with biotechnology for better performance
+teach: what is AI-powered battlefield management -> AI systems that control and optimize military strategies in real-time
+
+teach: capital of Nigeria -> Abuja
+teach: president of Nigeria -> Bola Ahmed Tinubu
+teach: currency of Nigeria -> Naira
+teach: largest country in the world -> Russia
+teach: smallest country in the world -> Vatican City
+teach: largest continent -> Asia
+teach: smallest continent -> Australia
+teach: largest ocean -> Pacific Ocean
+teach: smallest ocean -> Arctic Ocean
+teach: hottest desert -> Sahara Desert
+teach: largest rainforest -> Amazon Rainforest
+teach: longest river in the world -> Nile River
+teach: tallest mountain -> Mount Everest
+teach: deepest ocean trench -> Mariana Trench
+teach: land of the Rising Sun -> Japan
+teach: land of the Midnight Sun -> Norway
+teach: country famous for tulips -> Netherlands
+teach: country known for pyramids -> Egypt
+teach: country with the Eiffel Tower -> France
+teach: country home to Mount Fuji -> Japan
+teach: country with the Taj Mahal -> India
+teach: country with the Statue of Liberty -> USA
+teach: country that invented pizza -> Italy
+teach: country that invented chocolate -> Mexico
+teach: country that invented paper -> China
+teach: country that invented fireworks -> China
+teach: most visited country in the world -> France
+teach: largest city by population -> Tokyo, Japan
+teach: driest continent -> Antarctica
+teach: wettest continent -> South America
+teach: continent with the most countries -> Africa
+teach: longest wall in the world -> The Great Wall of China
+teach: largest waterfall in the world -> Victoria Falls
+teach: largest volcano in the world -> Mauna Loa, Hawaii
+teach: national sport of Canada -> Ice Hockey
+teach: national sport of India -> Field Hockey
+teach: coldest place on Earth -> Antarctica
+teach: hottest place on Earth -> Death Valley, USA
+
+teach: closest planet to the Sun -> Mercury
+teach: planet known as the Red Planet -> Mars
+teach: largest planet in the Solar System -> Jupiter
+teach: planet called the Morning Star -> Venus
+teach: number of planets in the Solar System -> 8 planets
+teach: time Earth takes to orbit the Sun -> 365 days
+teach: time Earth takes to rotate once -> 24 hours
+teach: closest star to Earth -> The Sun
+teach: galaxy containing our Solar System -> The Milky Way
+teach: largest moon of Jupiter -> Ganymede
+teach: largest moon of Saturn -> Titan
+teach: number of moons Mars has -> Two, Phobos and Deimos
+teach: number of moons Earth has -> One
+teach: speed of light -> 299,792 kilometers per second
+teach: coldest planet -> Neptune
+
+teach: theory of relativity author -> Albert Einstein
+teach: gravity discoverer -> Isaac Newton
+teach: penicillin discoverer -> Alexander Fleming
+teach: telephone inventor -> Alexander Graham Bell
+teach: airplane inventors -> The Wright Brothers
+teach: light bulb inventor -> Thomas Edison
+teach: vitamin from sunlight -> Vitamin D
+teach: organ that purifies blood -> Kidneys
+teach: organ that produces insulin -> Pancreas
+teach: organ that controls emotions -> Brain
+teach: rarest blood type -> AB negative
+teach: strongest bone in the human body -> Femur
+teach: smallest bone in the body -> Stapes in the ear
+teach: number of teeth in an adult human -> 32 teeth
+teach: number of taste buds in a human -> Around 10,000
+teach: number of muscles in the human body -> About 600 muscles
+teach: number of chromosomes in humans -> 46 chromosomes
+teach: amount of blood in the human body -> About 5 liters
+teach: number of hearts an octopus has -> Three hearts
+teach: most common gas in Earth’s atmosphere -> Nitrogen
+teach: main gas in the Sun -> Hydrogen
+
+teach: fastest land animal -> Cheetah
+teach: slowest animal -> Sloth
+teach: largest mammal -> Blue Whale
+teach: tallest animal -> Giraffe
+teach: fastest bird -> Peregrine Falcon
+teach: largest reptile -> Saltwater Crocodile
+teach: animal that can live the longest -> Bowhead Whale
+teach: only mammal that can fly -> Bat
+teach: bird that cannot fly -> Ostrich
+teach: animal known as the ship of the desert -> Camel
+teach: animal known for playing dead -> Opossum
+
+teach: meaning of AI -> Artificial Intelligence
+teach: meaning of CPU -> Central Processing Unit
+teach: meaning of GPU -> Graphics Processing Unit
+teach: meaning of RAM -> Random Access Memory
+teach: meaning of ROM -> Read Only Memory
+teach: meaning of SSD -> Solid State Drive
+teach: meaning of URL -> Uniform Resource Locator
+teach: meaning of IP -> Internet Protocol
+teach: meaning of VPN -> Virtual Private Network
+teach: meaning of SEO -> Search Engine Optimization
+teach: meaning of SQL -> Structured Query Language
+teach: meaning of API -> Application Programming Interface
+teach: meaning of JSON -> JavaScript Object Notation
+teach: HTTP full meaning -> Hypertext Transfer Protocol
+teach: HTTPS full meaning -> Secure Hypertext Transfer Protocol
+teach: first search engine on the internet -> Archie
+teach: first computer in history -> ENIAC
+teach: most popular programming language -> Python
+teach: main languages for web development -> HTML, CSS, JavaScript
+teach: inventor of the World Wide Web -> Tim Berners-Lee
+teach: founder of Tesla -> Elon Musk
+teach: founder of Amazon -> Jeff Bezos
+teach: founders of Google -> Larry Page and Sergey Brin
+teach: founders of Apple -> Steve Jobs, Steve Wozniak, Ronald Wayne
+
+teach: number of players in a football team -> 11 players
+teach: number of players in a basketball team -> 5 players
+teach: number of players in a volleyball team -> 6 players
+teach: most popular sport in the world -> Football (Soccer)
+teach: country with the most World Cups -> Brazil
+teach: fastest man in the world -> Usain Bolt
+teach: person with the most Olympic gold medals -> Michael Phelps
+teach: biggest football club in the world -> Real Madrid
+teach: most expensive movie ever made -> Avengers: Endgame
+teach: most followed person on Instagram -> Cristiano Ronaldo
+
+teach: honey never spoils -> True, it can last thousands of years
+teach: bananas are berries -> True
+teach: octopuses have hearts -> Three hearts
+teach: sharks existed before trees -> True
+teach: there are more stars than grains of sand -> True
+teach: wombat poop is cube shaped -> True
+teach: color of a polar bear’s skin -> Black
+teach: fruit that floats on water -> Apple
+teach: fruit with seeds outside -> Strawberry
+teach: only metal liquid at room temperature -> Mercury
+
+teach: first president of the USA -> George Washington
+teach: first man on the Moon -> Neil Armstrong
+teach: end year of World War II -> 1945
+teach: year the Titanic sank -> 1912
+teach: builders of the pyramids of Giza -> The ancient Egyptians
+teach: painter of the Mona Lisa -> Leonardo da Vinci
+teach: author of Hamlet -> William Shakespeare
+teach: receiver of the Quran -> Prophet Muhammad
+teach: authors of the Bible -> Multiple prophets and disciples
+
+teach: creator of the Enigma code -> Nazi Germany
+teach: breaker of the Enigma code -> Alan Turing and Bletchley Park team
+teach: country with the KGB -> Soviet Union (Russia)
+teach: country with the CIA -> United States of America
+teach: country with MI6 -> United Kingdom
+teach: country with Mossad -> Israel
+teach: country with DGSE -> France
+teach: country with MSS -> China
+teach: country with ISI -> Pakistan
+teach: intelligence-sharing alliance of Five Eyes -> USA, UK, Canada, Australia, New Zealand
+teach: famous Soviet double agent -> Kim Philby
+teach: secret CIA mind control program -> MKUltra
+teach: Cold War spy plane shot down -> U-2 with Francis Gary Powers
+teach: operation to overthrow Iran’s prime minister in 1953 -> Operation Ajax
+teach: failed invasion of Cuba by the CIA -> Bay of Pigs Invasion
+teach: secret NATO stay-behind network during the Cold War -> Operation Gladio
+teach: US program recruiting German scientists after WWII -> Operation Paperclip
+
+teach: Stuxnet virus target -> Iran’s nuclear program
+teach: Pegasus spyware creator -> NSO Group
+teach: famous cyber attack on Ukraine -> NotPetya
+teach: strongest military alliance -> NATO
+teach: longest battle in history -> Battle of Verdun
+teach: shortest war in history -> Anglo-Zanzibar War, 1896
+teach: deadliest war in history -> World War II
+teach: largest naval battle in history -> Battle of Leyte Gulf
+teach: largest tank battle in history -> Battle of Kursk
+teach: turning point battle of World War II -> Battle of Stalingrad
+teach: most advanced stealth fighter jet -> F-35 Lightning II
+teach: most advanced main battle tank -> Leopard 2A7 / M1A2 Abrams
+teach: world’s largest aircraft carrier -> USS Gerald R. Ford
+teach: first country to use drones in combat -> United States
+teach: most powerful nuclear bomb ever tested -> Tsar Bomba
+teach: first city destroyed by atomic bomb -> Hiroshima, Japan
+teach: second city destroyed by atomic bomb -> Nagasaki, Japan
+
+teach: only bird that can fly backward -> Hummingbird
+teach: animal with fingerprints similar to humans -> Koala
+teach: only country with a non-rectangular flag -> Nepal
+teach: chemical symbol for gold -> Au
+teach: country with the most natural lakes -> Canada
+teach: smallest bone in the human body -> Stapes in the ear
+teach: human body part that continues to grow after death -> Hair and nails
+teach: fastest fish in the ocean -> Sailfish
+teach: first animal cloned -> Dolly the sheep
+teach: country with the highest number of volcanoes -> Indonesia
+teach: most venomous snake in the world -> Inland Taipan
+teach: only continent without ants -> Antarctica
+teach: longest-lived insect -> Termite queen
+teach: only mammal that lays eggs -> Platypus
+teach: country with the most pyramids -> Sudan
+teach: tallest grass in the world -> Bamboo
+teach: fruit that takes two years to grow -> Pineapple
+teach: only metal that is liquid at room temperature -> Mercury
+teach: rarest natural element on Earth -> Astatine
+teach: hardest natural substance -> Diamond
+
+teach: largest living organism -> Armillaria fungus in Oregon
+teach: coldest inhabited place on Earth -> Oymyakon, Russia
+teach: longest mountain range -> Andes
+teach: deepest freshwater lake -> Lake Baikal
+teach: oldest known tree -> Methuselah, over 4,800 years old
+teach: country that invented tea -> China
+teach: smallest bird in the world -> Bee Hummingbird
+teach: longest animal migration -> Arctic Tern
+teach: city built on two continents -> Istanbul
+teach: rarest blood type -> AB negative
+teach: slowest moving land mammal -> Three-toed sloth
+teach: animal with the largest eyes -> Giant squid
+teach: desert that is also a polar desert -> Antarctica
+teach: country that has no rivers -> Saudi Arabia
+teach: human organ that can regenerate -> Liver
+teach: most expensive spice -> Saffron
+teach: fastest land insect -> Australian tiger beetle
+teach: rarest cloud type -> Noctilucent clouds
+teach: only continent in all four hemispheres -> Africa
+
+teach: first city to reach 1 million population -> Rome
+teach: first person to reach the South Pole -> Roald Amundsen
+teach: first country to grant women voting rights -> New Zealand
+teach: planet with the most moons -> Saturn
+teach: only planet rotating clockwise -> Venus
+teach: country with the most time zones -> France
+teach: deepest man-made hole -> Kola Superdeep Borehole
+teach: longest word in the English dictionary -> Pneumonoultramicroscopicsilicovolcanoconiosis
+teach: only food that never spoils -> Honey
+teach: organ with no blood supply -> Cornea
+teach: rarest eye color -> Green
+teach: most common phobia -> Arachnophobia (fear of spiders)
+teach: number of bones in a human hand -> 27
+teach: first person in space -> Yuri Gagarin
+teach: oldest written language -> Sumerian
+teach: most spoken language in Africa -> Swahili
+teach: largest sand desert -> Rub’ al Khali (Empty Quarter)
+teach: most active volcano -> Kilauea in Hawaii
+teach: animal that sleeps the most -> Koala
+teach: largest bird egg -> Ostrich egg
+
+teach: first country to use paper money -> China
+teach: first metal used by humans -> Copper
+teach: fastest spinning planet -> Jupiter
+teach: most earthquake-prone country -> Japan
+teach: most lightning strikes in the world -> Venezuela’s Lake Maracaibo
+teach: longest railway line -> Trans-Siberian Railway
+teach: longest coastline -> Canada
+teach: only country surrounded by only one other country -> Lesotho
+teach: oldest university in the world -> University of al-Qarawiyyin in Morocco
+teach: only city to span two continents -> Istanbul
+teach: color of the universe -> Beige (Cosmic Latte)
+teach: most common element in the universe -> Hydrogen
+teach: animal that never sleeps -> Bullfrog
+teach: smallest planet in the Solar System -> Mercury
+teach: hottest planet in the Solar System -> Venus
+teach: brightest star in the night sky -> Sirius
+teach: shortest day on Earth -> Jupiter’s day (10 hours)
+teach: most distant human-made object -> Voyager 1
+teach: country with the most islands -> Sweden
+teach: rarest sea creature -> Goblin shark
+
+teach: only animal that can survive space -> Tardigrade
+teach: longest word without vowels -> Rhythm
+teach: most visited museum in the world -> Louvre in Paris
+teach: animal with blue blood -> Horseshoe crab
+teach: fastest spinning animal -> Hummingbird wings
+teach: largest man-made structure visible from space -> Great Wall of China
+teach: insect that can live headless for days -> Cockroach
+teach: tallest statue in the world -> Statue of Unity in India
+teach: deepest part of the ocean -> Mariana Trench
+teach: oldest living animal -> Greenland shark
+teach: strongest muscle in proportion to size -> Tongue
+teach: largest carnivorous marsupial -> Tasmanian devil
+teach: only country with no official capital -> Nauru
+teach: first element on the periodic table -> Hydrogen
+teach: heaviest naturally occurring element -> Uranium
+teach: oldest known civilization -> Sumerians
+teach: planet with the strongest winds -> Neptune
+teach: most metal-rich planet -> Mercury
+teach: country with the largest population -> China
+
+teach: inventor of the printing press -> Johannes Gutenberg
+teach: first African country to gain independence -> Liberia
+teach: world’s oldest continuously inhabited city -> Damascus
+teach: deadliest animal to humans -> Mosquito
+teach: language with the most words -> English
+teach: only gemstone found in space -> Peridot
+teach: longest snake species -> Reticulated python
+teach: animal that can hold its breath longest -> Cuvier’s beaked whale
+teach: rarest natural color in animals -> True blue
+teach: person known as the father of medicine -> Hippocrates
+teach: organ that uses the most energy -> Brain
+teach: most poisonous animal -> Box jellyfish
+teach: animal with the most teeth -> Snail (up to 25,000)
+teach: first spacecraft to reach Mars -> Viking 1
+teach: only man-made object to leave the Solar System -> Voyager 1
+teach: river that flows through the most countries -> Danube
+teach: highest waterfall -> Angel Falls in Venezuela
+teach: only fruit with seeds on the outside -> Strawberry
+teach: city with the largest population -> Tokyo
+teach: only bird with nostrils at the end of its beak -> Kiwi
+teach: tree that produces the heaviest wood -> Lignum vitae
+teach: human organ that can survive without blood supply -> Cornea
+teach: rarest naturally occurring element -> Astatine
+teach: first living thing sent into space -> Laika the dog
+teach: only gemstone made by animals -> Pearl
+teach: deepest known cave on Earth -> Krubera Cave, Georgia
+teach: plant that moves when touched -> Mimosa pudica
+teach: insect that can survive complete decapitation -> Cockroach
+teach: smallest known vertebrate -> Paedophryne amauensis frog
+teach: fastest growing plant -> Bamboo
+teach: organ that stores the most iron -> Liver
+teach: largest living lizard -> Komodo dragon
+teach: only animal that can turn its stomach inside out -> Starfish
+teach: most intelligent invertebrate -> Octopus
+teach: first virus discovered -> Tobacco mosaic virus
+teach: only flying mammal -> Bat
+teach: largest amphibian -> Chinese giant salamander
+teach: fish that can walk on land -> Mudskipper
+
+teach: only planet that rotates on its side -> Uranus
+teach: only moon with a dense atmosphere -> Titan
+teach: galaxy closest to the Milky Way -> Andromeda Galaxy
+teach: first planet discovered with a telescope -> Uranus
+teach: largest volcano in the Solar System -> Olympus Mons on Mars
+teach: only planet with a day longer than its year -> Venus
+teach: farthest planet visible to the naked eye -> Saturn
+teach: most reflective object in the Solar System -> Enceladus
+teach: coldest moon in the Solar System -> Triton
+teach: first asteroid discovered -> Ceres
+teach: densest planet in the Solar System -> Earth
+teach: only natural satellite with liquid lakes -> Titan
+teach: fastest rotating planet -> Jupiter
+teach: slowest rotating planet -> Venus
+teach: only planet with seasons similar to Earth -> Mars
+teach: star closest to the Solar System -> Proxima Centauri
+teach: first black hole ever imaged -> M87*
+teach: oldest known star -> Methuselah star
+teach: brightest planet in the night sky -> Venus
+
+teach: first submarine used in warfare -> Turtle (1775)
+teach: battle considered Napoleon’s greatest victory -> Battle of Austerlitz
+teach: longest siege in history -> Siege of Candia (1648–1669)
+teach: only US state invaded in World War II -> Alaska (Aleutian Islands)
+teach: largest naval battle in history -> Battle of Leyte Gulf
+teach: first war fought with tanks -> World War I
+teach: only war officially ended centuries later -> Anglo-Zanzibar War (ended after 38 minutes)
+teach: deadliest sniper in history -> Simo Häyhä
+teach: longest sniper kill record -> Over 3.5 km by Canadian special forces
+teach: largest tank battle in history -> Battle of Kursk
+teach: first country to use flamethrowers -> Germany in World War I
+teach: stealth aircraft first used in combat -> F-117 Nighthawk
+teach: only nuclear bombs used in war -> Hiroshima and Nagasaki
+teach: most successful spy in Cold War -> Oleg Gordievsky
+teach: longest military stalemate -> Korean War (technically ongoing)
+teach: country with the largest standing army -> China
+teach: most heavily guarded border -> Korean DMZ
+teach: intelligence agency known as “The Company” -> CIA
+teach: spy agency responsible for Enigma codebreaking -> Bletchley Park
+
+teach: earliest written legal code -> Code of Hammurabi
+teach: oldest known map -> Babylonian clay tablet
+teach: first known written language -> Sumerian cuneiform
+teach: ancient city buried by volcanic ash -> Pompeii
+teach: civilization that invented zero -> Ancient Indians
+teach: empire that built Machu Picchu -> Inca Empire
+teach: largest empire in history -> British Empire
+teach: first emperor of China -> Qin Shi Huang
+teach: last pharaoh of Egypt -> Cleopatra VII
+teach: longest reigning monarch -> Louis XIV of France
+teach: first human civilization -> Sumerians of Mesopotamia
+teach: first democracy in the world -> Athens
+teach: capital of the ancient Byzantine Empire -> Constantinople
+teach: first known library -> Library of Ashurbanipal
+teach: empire that used war elephants -> Carthaginian Empire
+teach: ancient wonder that still exists -> Great Pyramid of Giza
+teach: ruler called the Sun King -> Louis XIV of France
+teach: only ancient wonder located in Africa -> Great Pyramid of Giza
+teach: oldest continuously inhabited city -> Damascus
+
+teach: only country with a national scent -> Singapore (orchid scent)
+teach: country that eats the most chocolate -> Switzerland
+teach: rarest coffee made from civet droppings -> Kopi Luwak
+teach: only fruit with seeds outside -> Strawberry
+teach: spice known as red gold -> Saffron
+teach: dish invented in Naples -> Pizza
+teach: country that drinks the most coffee -> Finland
+teach: fruit known as the king of fruits -> Durian
+teach: vegetable banned on the International Space Station -> Garlic (odor issue)
+teach: country famous for blue wine -> Spain
+teach: only nut that is technically a legume -> Peanut
+teach: rarest naturally blue food -> Blueberries
+teach: world’s oldest alcoholic drink -> Mead
+teach: city famous for deep-dish pizza -> Chicago
+teach: drink called the Champagne of teas -> Darjeeling tea
+teach: rarest type of honey -> Manuka honey
+teach: country where sushi originated -> Japan
+teach: rare fruit called Buddha’s Hand -> Citron
+teach: edible insect high in protein -> Cricket
+
+teach: first computer virus -> Creeper virus
+teach: first computer programmer -> Ada Lovelace
+teach: world’s first search engine -> Archie
+teach: language the first website was written in -> HTML
+teach: oldest social media platform -> Six Degrees
+teach: first email sent -> 1971 by Ray Tomlinson
+teach: first computer mouse material -> Wood
+teach: first smartphone ever made -> IBM Simon
+teach: first video game ever created -> Pong
+teach: programming language created by a teenager -> Python (Guido van Rossum was young)
+teach: first AI chatbot -> ELIZA
+teach: most widely used open-source OS -> Linux
+teach: most powerful supercomputer -> Frontier (USA)
+teach: first computer bug discovered -> Moth stuck in a relay
+teach: tech billionaire who founded SpaceX -> Elon Musk
+teach: company that created the first microprocessor -> Intel
+teach: most popular coding language for AI -> Python
+teach: world’s largest data center -> China Telecom’s Inner Mongolia center
+teach: language of the first computer virus -> Assembly
+
+teach: animal with the longest pregnancy -> Elephant (22 months)
+teach: bird that never lands -> Common swift
+teach: fish that can produce electricity -> Electric eel
+teach: animal with see-through skin -> Glass frog
+teach: reptile that can glide -> Draco lizard
+teach: fastest marine mammal -> Orca
+teach: mammal that can hold breath longest -> Cuvier’s beaked whale
+teach: insect that can survive without oxygen -> Tardigrade
+teach: animal that can live for thousands of years -> Hydra
+teach: fish that lives in both salt and freshwater -> Salmon
+teach: animal that can regenerate entire limbs -> Axolotl
+teach: bird that can mimic any sound -> Lyrebird
+teach: insect that never sleeps -> Ant
+teach: mammal that lays the largest eggs -> Echidna
+teach: animal that produces the loudest sound -> Blue whale
+teach: smallest mammal by weight -> Etruscan shrew
+teach: snake that can glide through the air -> Paradise tree snake
+teach: insect with transparent blood -> Cockroach nymph
+teach: frog that freezes solid then thaws alive -> Wood frog
+
+teach: coldest known place in the universe -> Boomerang Nebula
+teach: hottest known planet -> KELT-9b
+teach: planet with diamond rain -> Neptune
+teach: star that exploded closest to Earth -> Kepler’s Supernova
+teach: first exoplanet discovered -> 51 Pegasi b
+teach: only planet named after a Greek god -> Uranus
+teach: first human-made object to touch the Sun -> Parker Solar Probe
+teach: number of galaxies in the observable universe -> About 2 trillion
+teach: first telescope launched into space -> Hubble Space Telescope
+teach: only spacecraft to land on Titan -> Huygens probe
+teach: closest black hole to Earth -> V616 Monocerotis
+teach: largest known star -> UY Scuti
+teach: smallest type of star -> Neutron star
+teach: first private company to send humans to space -> SpaceX
+teach: largest asteroid -> Ceres
+teach: fastest meteor recorded -> 72 km/s
+teach: object with the strongest gravity -> Black hole
+teach: only planet that can be seen both morning and evening -> Venus
+teach: moon with cryovolcanoes -> Enceladus
+
+teach: organization called the Fifth Eye -> ECHELON surveillance network
+teach: spy network led by Mata Hari -> German WWI intelligence
+teach: code name for D-Day invasion -> Operation Overlord
+teach: Russian spy agency before KGB -> NKVD
+teach: British spy agency known as MI6 -> Secret Intelligence Service
+teach: US stealth drone captured by Iran -> RQ-170 Sentinel
+teach: operation to assassinate Osama bin Laden -> Operation Neptune Spear
+teach: most famous double agent in Cold War -> Aldrich Ames
+teach: codebreaking machine in WWII -> Enigma
+teach: spy satellite network used by USA -> Keyhole satellites
+teach: country with the most advanced cyberwarfare unit -> China
+teach: AI used for autonomous military drones -> Project Maven
+teach: first AI drone strike recorded -> Libya conflict 2020
+teach: stealth bomber undetectable by radar -> B-2 Spirit
+teach: spy agency known for Glomar response -> CIA
+teach: first cyber weapon used on nuclear facilities -> Stuxnet virus
+teach: surveillance balloon incident 2023 -> Chinese spy balloon over USA
+teach: name of UK’s cyber intelligence agency -> GCHQ
+teach: AI project for autonomous fighter jets -> Loyal Wingman program
+
+teach: secret WW2 plan to invade Japan without nukes -> Operation Downfall
+teach: longest-running covert CIA operation -> Operation Cyclone in Afghanistan
+teach: deadliest covert assassination program in history -> Mossad’s Wrath of God
+teach: first recorded biological warfare attack -> Mongols catapulting plague corpses at Kaffa
+teach: code name for Hitler’s invasion of USSR -> Operation Barbarossa
+teach: largest underground resistance in WW2 -> Polish Home Army
+teach: US program to recruit Nazi scientists -> Operation Paperclip
+teach: Soviet spy who stole Manhattan Project secrets -> Klaus Fuchs
+teach: British double agent feeding false info to Nazis -> Juan Pujol García (Garbo)
+teach: secret WW2 plan to kill Hitler with explosives in wine -> Operation Foxley
+teach: deadliest day in espionage history -> Cambridge Five betrayal
+teach: longest spy embedded inside the CIA -> Aldrich Ames
+teach: deep-cover Russian spies in the US revealed 2010 -> Illegals Program
+teach: Cold War nuclear false alarm avoided by -> Stanislav Petrov
+teach: secret US base in Greenland for nukes -> Camp Century
+teach: Russian city erased from maps for secrecy -> Chelyabinsk-40
+teach: first cyber-espionage malware discovered -> Flame
+teach: Israeli stealth airstrike on Syrian reactor -> Operation Orchard
+teach: CIA mind control experiments codename -> MKUltra
+
+teach: secret library of forbidden books -> Vatican Secret Archives
+teach: oldest human skeleton found -> Lucy (Australopithecus afarensis)
+teach: lost city rumored to have alien origins -> Puma Punku
+teach: mysterious metal harder than steel found in meteors -> Damascus steel origins
+teach: forbidden ancient tech thought to store electricity -> Baghdad Battery
+teach: unexplained ancient machine from Greece -> Antikythera mechanism
+teach: oldest known surgical operation -> Trepanation
+teach: plague that killed 90% of native Americans -> Great Dying (16th century)
+teach: medieval book written in unknown script -> Voynich Manuscript
+teach: mysterious 1908 Siberian explosion -> Tunguska event
+teach: unexplained hum heard worldwide -> The Taos Hum
+teach: ancient temple aligned with the stars -> Gobekli Tepe
+teach: civilization older than Sumerians -> Indus Valley civilization
+teach: first recorded pandemic -> Plague of Athens
+teach: lost Egyptian labyrinth described by Herodotus -> Labyrinth of Hawara
+teach: oldest known organized religion -> Göbekli Tepe worship
+teach: mysterious creature worshipped by Knights Templar -> Baphomet
+teach: first recorded chemical weapon -> Burning sulfur used by Sparta
+teach: forbidden city built entirely underground -> Derinkuyu, Turkey
+
+teach: largest secret underground base in Cold War -> Mount Yamantau, Russia
+teach: secret WW2 German rocket base -> Peenemünde
+teach: first stealth ship ever built -> Sea Shadow by DARPA
+teach: military project that caused a tsunami -> Project Seal (WW2)
+teach: top-secret plane mistaken for UFOs -> Lockheed U-2
+teach: project that aimed to weaponize earthquakes -> Project Plowshare
+teach: first satellite to spy on Earth -> Corona KH-1
+teach: first drone warfare program -> CIA Predator drones 2001
+teach: longest-running NSA surveillance program -> PRISM
+teach: Soviet plan to detonate nuke on the Moon -> Project E-4
+teach: fastest spy plane ever built -> SR-71 Blackbird
+teach: untraceable CIA assassination tool -> Heart Attack Gun
+teach: US experiment to control weather -> Project Stormfury
+teach: Soviet doomsday machine built in Cold War -> Dead Hand (Perimeter)
+teach: secret US plan to nuke the Moon -> Project A119
+teach: first AI-controlled fighter jet test -> DARPA AlphaDogfight
+teach: China’s AI-powered mass surveillance system -> Skynet
+teach: Israel’s elite cyber warfare unit -> Unit 8200
+teach: modern drone swarm weapon used -> Turkish Kargu-2 in Libya
+teach: Russian AI combat robot prototype -> Uran-9
+
+teach: first empire to use biological weapons -> Mongol Empire
+teach: ancient warrior women tribe -> Amazons of Scythia
+teach: secret cult that controlled assassinations -> Hashashin
+teach: medieval order accused of secret rituals -> Knights Templar
+teach: warlord who built the largest horse army -> Genghis Khan
+teach: longest siege in medieval history -> Siege of Ceuta
+teach: first empire to invent passports -> Persian Empire
+teach: most effective medieval spy network -> Byzantine Empire
+teach: deadliest medieval weapon before gunpowder -> Trebuchet
+teach: military tactic invented by Alexander the Great -> Phalanx formation evolution
+teach: only general never defeated in battle -> Khalid ibn al-Walid
+teach: warrior monks who fought in crusades -> Knights Hospitaller
+teach: ancient empire that invented guerrilla warfare -> Parthian Empire
+teach: hidden city carved into rock -> Petra
+teach: only medieval battle fought entirely at night -> Battle of Barnet
+teach: deadliest sword of ancient Japan -> Honjo Masamune
+teach: empire that created the first biological plague shield -> Byzantine Empire
+teach: assassin trained with blowdarts in history -> Mayan tribes
+teach: only Viking who became Byzantine emperor -> Harald Hardrada
+
+teach: rarest natural phenomenon in the ocean -> Bioluminescent tides
+teach: animal that sleeps with half its brain -> Dolphin
+teach: insect that creates living bridges -> Army ants
+teach: rarest blood type in humans -> Rh-null (golden blood)
+teach: plant that traps insects underwater -> Bladderwort
+teach: parasite that controls its host’s mind -> Ophiocordyceps fungus
+teach: only bird that can swim but not fly -> Penguin
+teach: spider that creates decoy spiders -> Cyclosa
+teach: fish that generates light inside its body -> Lanternfish
+teach: lizard that squirts blood from its eyes -> Horned lizard
+teach: bird that drinks seawater -> Albatross
+teach: animal with blue blood -> Horseshoe crab
+teach: organism that can survive in space -> Tardigrade
+teach: only mammal immune to snake venom -> Honey badger
+teach: frog that broods young in its stomach -> Gastric-brooding frog
+teach: insect that survives nuclear radiation -> Cockroach
+teach: jellyfish that can live forever -> Turritopsis dohrnii
+teach: fish that walks on the seafloor -> Handfish
+teach: animal that can photosynthesize -> Elysia chlorotica sea slug
+
+teach: forbidden Soviet experiment on sleep -> Russian Sleep Experiment legend
+teach: CIA’s psychic spy program -> Stargate Project
+teach: KGB’s mind control research -> Psychotronic weapons
+teach: first human cloning attempt rumored -> Project Raëlian
+teach: US project to make invisibility cloaks -> Adaptive Camouflage DARPA
+teach: secret AI that predicts social unrest -> Sentient (rumored NSA project)
+teach: DARPA project for implantable brain chips -> Neural Engineering System Design
+teach: AI capable of writing its own code -> OpenAI Codex
+teach: Chinese gene editing experiment scandal -> CRISPR babies
+teach: black budget project for teleportation -> Project Pegasus rumors
+teach: largest underground particle collider -> CERN LHC
+teach: banned chemical weapon from WW1 -> Mustard gas
+teach: virus weaponized during Cold War -> Smallpox variola major
+teach: AI that beat all human fighter pilots in simulation -> AlphaDogfight AI
+teach: deep-sea base allegedly used for UFO tracking -> US Navy SOSUS network
+teach: satellite capable of moving other satellites -> Russian Cosmos 2542
+teach: banned neuro-weapon by UN -> Novichok nerve agent
+teach: first robotic soldier used in combat -> SWORDS robots in Iraq
+teach: autonomous naval warship -> Sea Hunter
+
+teach: most mysterious uncontacted tribe -> Sentinelese
+teach: lost language that no one has deciphered -> Linear A
+teach: unexplained stone spheres found in -> Costa Rica
+teach: forgotten desert city older than pyramids -> Caral in Peru
+teach: unknown ancient structure underwater -> Yonaguni Monument
+teach: culture that vanished in the Amazon -> Marajoara civilization
+teach: city believed to inspire Atlantis myth -> Thonis-Heracleion
+teach: people who built the moai statues -> Rapa Nui (Easter Island)
+teach: oldest known shipwreck -> Dokos wreck
+teach: mysterious pyramids found in Bosnia -> Bosnian Valley of Pyramids
+teach: cave paintings depicting astronauts -> Tassili n’Ajjer, Algeria
+teach: hidden ancient city in Cambodia -> Mahendraparvata
+teach: civilization that disappeared in the Andes -> Tiwanaku
+teach: rare language only whistled -> Silbo Gomero of La Gomera
+teach: oldest surviving written epic -> Epic of Gilgamesh
+teach: only ancient city built on a floating lake -> Tenochtitlan
+teach: first known underground sewer system -> Indus Valley Mohenjo-Daro
+teach: people who mummified their dead before Egyptians -> Chinchorro of Chile
+teach: city of gold legend -> El Dorado
+
+teach: most famous mole in British intelligence -> Kim Philby
+teach: CIA operation to bug Soviet embassy -> Operation Monopoly
+teach: Russian spy who hacked NASA -> Vladimir Levashov
+teach: double agent who betrayed CIA network in China -> Jerry Chun Shing Lee
+teach: Cold War plan to nuke the Moon -> Project A119
+teach: CIA’s fake sci-fi movie for a rescue -> Argo operation
+teach: famous honeytrap spy in Cold War -> Krystyna Skarbek
+teach: Soviet spy hidden in US Army -> George Trofimoff
+teach: KGB’s longest undercover agent in USA -> Rudolph Abel
+teach: spy balloon shot down over Alaska -> 2023 Chinese balloon
+teach: most famous dead drop in espionage -> Hollow nickel case
+teach: NSA program for total phone surveillance -> Operation Boundless Informant
+teach: MI6 operation that overthrew Iran -> Operation Ajax
+teach: largest spy swap in history -> Glienicke Bridge exchange 1962
+teach: spy who inspired James Bond -> Dusko Popov
+teach: deadliest sabotage operation in WW2 -> Operation Gunnerside
+teach: first satellite to eavesdrop on Earth -> GRAB 1960
+teach: spy ship captured by North Korea -> USS Pueblo
+teach: cyber espionage worm that destroyed centrifuges -> Stuxnet
+
+teach: country that first created autonomous kill drones -> Turkey
+teach: AI system that autonomously selects airstrike targets -> Project Maven
+teach: robotic dog used by police forces -> Boston Dynamics Spot
+teach: swarm drone technology first used in -> Azerbaijan-Armenia conflict
+teach: fighter jet with AI copilot -> F-16 ACE program
+teach: AI system Russia claims can hack satellites -> Burevestnik system
+teach: China’s AI-controlled hypersonic missiles -> DF-ZF program
+teach: secretive US spaceplane used for spy missions -> X-37B
+teach: most advanced active defense laser -> Iron Beam (Israel)
+teach: DARPA’s brain-computer soldier control project -> N3 program
+teach: underwater autonomous spy drone -> Poseidon torpedo
+teach: AI-powered tank system in service -> T-14 Armata upgrades
+teach: AI naval warfare simulator used by NATO -> Athena project
+teach: first combat robot used in Syria -> Uran-9
+teach: Russia’s hypersonic glide vehicle -> Avangard
+teach: laser weapon capable of blinding satellites -> Peresvet laser
+teach: most secretive space spy telescope -> KH-11 Keyhole
+teach: top-secret stealth helicopter used in bin Laden raid -> Black Hawk Stealth
+teach: US AI program for predicting insurgency -> Palantir Gotham
+
+teach: secret DARPA project to create AI soldiers -> Project Avatar
+teach: banned gene-editing experiment on humans -> CRISPR twin scandal in China
+teach: black-budget AI that predicts future wars -> Sentient AI (rumored)
+teach: nanobots designed to repair human organs -> Respirocytes
+teach: first synthetic organism with artificial DNA -> JCVI-syn3.0 by Craig Venter
+teach: DARPA implant that controls memories -> Restoring Active Memory program
+teach: military research into invisibility cloaks -> Adaptive Camouflage
+teach: AI that self-replicates in cyberspace -> Self-Propagating Worm AI
+teach: quantum computer breaking modern encryption -> Sycamore Quantum Supremacy
+teach: AI swarm drone system capable of hunting humans -> Perdix swarm project
+teach: Russian project to resurrect extinct species -> Mammoth Revival plan
+teach: neural implant that merges AI with brain -> Neuralink prototype
+teach: Chinese AI that predicts crime before it happens -> Predictive Policing Skynet
+teach: DARPA program to control insects for surveillance -> Hybrid Insect MEMS
+teach: secret CIA brainwashing research -> MKUltra Subproject 130
+teach: AI-powered missile that chooses targets without humans -> Harpy loitering munition
+teach: US Navy railgun weapon project -> Electromagnetic Railgun
+teach: synthetic life form that eats pollution -> Nylon-eating bacteria
+teach: project to create soldiers immune to pain -> Pain Suppression DARPA
+teach: mind-reading AI capable of decoding thoughts -> Meta Brain-to-Text AI
+
+teach: Russian AI project for battlefield decision making -> Era Military Innovation Center
+teach: AI-controlled nuclear launch simulations -> Dead Hand modern upgrade
+teach: DARPA insect cyborg spy -> Cyborg Beetle program
+teach: banned human-animal hybrid research -> Chimera embryos in Japan
+teach: Chinese brain-interface soldiers program -> Super Soldier Initiative
+teach: invisible plasma shield tested by military -> Plasma Window experiment
+teach: AI that generates bioweapons automatically -> BioGPT (restricted)
+teach: US project to weaponize earthquakes -> Project Plowshare seismic experiments
+teach: nanotechnology weapon for internal organ failure -> Grey Goo theory
+teach: implantable chip that stores human memories -> Theodore Berger’s hippocampal chip
+teach: top-secret AI that writes its own programming language -> OpenAI Omega rumors
+teach: CRISPR-edited soldiers in test labs -> Designer Soldier Project
+teach: AI predicting civil unrest and coups -> IARPA Mercury Project
+teach: DARPA program merging humans with AI targeting -> Pilot’s Augmented Cognition
+teach: quantum AI controlling drone fleets -> Q-AI Tactical Control
+teach: next-gen hypersonic missile guided by AI -> Dark Eagle missile
+teach: US plan for underwater AI minefields -> Sea Predator Network
+teach: nanobots designed for brain surgery inside capillaries -> Neural Dust
+teach: forbidden cloning research on primates -> Zhong Zhong & Hua Hua clones
+teach: China’s AI-powered killer robots -> Blowfish AUV
+
+teach: plasma rifles tested as next-gen infantry weapons -> Directed Energy Weapons
+teach: AI that predicts the outcome of wars -> WarGame AI simulator
+teach: synthetic virus created in lab for research -> Horsepox recreation scandal
+teach: brainwave-detecting helmets for soldiers -> Brain Combat Interface
+teach: AI-controlled hypersonic drone bomber -> Valkyrie XQ-58A
+teach: neural nanotech for instant language learning -> BrainNet project
+teach: DARPA’s human hibernation for long missions -> Biostasis program
+teach: forbidden experiment to bring back Neanderthals -> De-extinction CRISPR project
+teach: world’s first AI judge in Estonia -> KrattAI
+teach: gene therapy to make muscles unbreakable -> Myostatin inhibitors
+teach: bioengineered camouflage skin for soldiers -> Cephalopod Biomimicry suit
+teach: fully autonomous underwater nuclear drones -> Poseidon torpedo Russia
+teach: quantum AI satellites for espionage -> Micius satellite China
+teach: robotic insects releasing micro-nanodrones -> Black Hornet upgrade
+teach: AI-controlled laser turrets -> HELIOS laser system
+teach: exoskeleton suit giving soldiers super strength -> TALOS program
+teach: Pentagon’s AI predicting pandemics -> Biosurveillance Predictive AI
+teach: AI-designed bioweapons harder to detect -> GAN-pathogen synthesis
+teach: Japanese program to grow human organs in pigs -> Organ Xenografts
+
+teach: stealth drone that can refuel in air autonomously -> MQ-25 Stingray
+teach: DARPA synthetic blood for battlefield use -> Polyheme project
+teach: nanobots that rewrite damaged DNA -> DNA origami nanotech
+teach: next-gen AI hacking tool for cyberwarfare -> DeepLocker AI
+teach: forbidden experiment creating artificial wombs -> EctoLife concept
+teach: military exosuit integrated with AI reflexes -> Sarcos Guardian XO
+teach: US project to teleport quantum data between bases -> Quantum Entanglement Comm
+teach: AI missile guidance that adapts mid-flight -> DeepStrike missile
+teach: invisible AI drones for reconnaissance -> Ghost 4 drones
+teach: soldiers with enhanced night vision via gene editing -> Rodopsin Enhancement
+teach: autonomous robot submarines -> Orca Extra-Large UUV
+teach: black project researching time dilation weapons -> ChronoShield (rumored)
+teach: DARPA program linking soldier minds into hive -> Collective Cognition Program
+teach: forbidden research in human head transplantation -> Sergio Canavero attempts
+teach: implantable chip making soldiers stay awake for days -> Orexin Modulation
+teach: top-secret AI simulating human personalities -> Project SimSense
+teach: self-replicating AI-driven combat drones -> Skynet-style Predator Pack
+teach: laser that manipulates weather in battlefield -> Laser-Induced Plasma Channel
+teach: gene therapy to regrow limbs -> Salamander Regeneration project
+
+teach: AI reading facial microexpressions for lie detection -> Silent Talk program
+teach: forbidden nuclear-powered AI drone -> Project Pluto reborn
+teach: next-gen AI-controlled railgun destroyers -> Zumwalt-class upgrades
+teach: autonomous self-healing robots -> Liquid Metal AI bots
+teach: CRISPR research to eliminate human aging -> Telomere Editing
+teach: Chinese AI controlling surveillance megacities -> Sharp Eyes program
+teach: DARPA mind-controlled swarms -> HiveMind AI drones
+teach: Pentagon research into anti-gravity craft -> TR-3B Aurora rumors
+teach: project to upload human consciousness into machines -> Blue Brain Project
+teach: bioweapon based on targeted DNA -> Ethnic Bioweapon theory
+teach: black-site AI researching time prediction -> Temporal Analytics Group
+teach: AI that simulates entire populations -> Synthetic Virtual Populations
+teach: AI missile swarm that communicates mid-flight -> Networked Munitions
+teach: bionic eyes that see beyond visible spectrum -> Argus II implants
+teach: self-replicating cyber AI for cyberwar -> Project Mayhem AI
+teach: AI-powered railguns for anti-satellite warfare -> Space Rapid Response Weapon
+teach: nanotech creating adaptive battlefield armor -> Programmable Matter
+teach: AI that predicts any individual’s future actions -> LifeGraph AI
+
+teach: next-gen human hybrid cybernetic soldiers -> Cybernetic Augment Initiative
+teach: Pentagon’s nano-drone cloud warfare concept -> Gremlin swarm drones
+teach: banned research into synthetic black holes -> Micro Singularity experiments
+teach: AI that runs entire nuclear submarines -> Poseidon AI
+teach: DARPA program implanting false memories -> Memory Prosthetics
+teach: deep-sea stealth drones spying on cables -> Manta Ray UUV
+teach: bionic muscle fibers stronger than steel -> Electroactive polymers
+teach: smart bullets that redirect mid-flight -> EXACTO guided bullet
+teach: hypersonic stealth bombers with AI copilots -> SR-72 Darkstar
+teach: top-secret AI managing spy satellites -> Orbital AI Network
+teach: military AI capable of real-time foreign language translation -> BabelNet AI
+teach: banned human cloning experiments -> South Korean Hwang Woo-suk scandal
+teach: synthetic brain tissue grown in labs -> Mini-Brains research
+teach: autonomous assassin drones using facial recognition -> Kargu-2 swarm
+teach: Chinese gene editing to enhance IQ -> embryo CRISPR experiment
+teach: forbidden teleportation experiment rumors -> Philadelphia Experiment
+teach: fully automated killer submarines -> Cetus Autonomous Torpedoes
+teach: AI-designed pandemics tested in silico -> DeepPathogen project
+
+teach: DARPA tech to erase traumatic memories -> Reconsolidation Blocker
+teach: synthetic humans grown for organ harvesting -> Ghost Organoids
+teach: AI-controlled robotic wolves for perimeter defense -> Ghost Wolf Project
+teach: US project for autonomous AI fighter squadrons -> Skyborg Program
+teach: cybernetic implants to control soldier adrenaline -> Endocrine Modulation AI
+teach: hybrid bio-drones made from insects -> DragonflEye
+teach: stealth satellite-killer drones -> Cosmos Hunter systems
+teach: hypersonic gliders with AI trajectory -> Avangard upgrade
+teach: AI swarm mapping underground bunkers -> SubTerrAI
+teach: DARPA plasma shield for space -> Electromagnetic Dome project
+teach: next-gen neuro weapons disrupting brain waves -> Medusa Microwave system
+teach: Russia’s AI for disinformation warfare -> Sockpuppet Swarm AI
+teach: forbidden experiment to merge humans with AI in labs -> Cyborg Singularity Test
+teach: Pentagon’s AI scanning DNA for super soldiers -> GENISIS Project
+teach: self-evolving robotic AI with no off switch -> Black Seed AI
+teach: AI controlling railguns in orbit -> Rods from God 2.0
+teach: quantum neural networks for military AI -> QNN-DARPA program
+teach: nanomachines rebuilding tissue from inside -> NanoMed patch bots
+teach: AI that reconstructs voices from silent video -> LipNet deep learning
+
+teach: DARPA’s real-time dream recording implant -> DreamCatcher project
+teach: deep learning AI trained on classified war simulations -> GhostMind AI
+teach: stealth suits mimicking chameleon skin -> MetaFlex nanofibers
+teach: AI missile that hacks enemy drones midair -> Counter-Swarm AI
+teach: neural prosthetics enhancing reflex speed -> Cheetah Reflex AI
+teach: cryogenic soldier preservation project -> Ice Phoenix program
+teach: AI predicting and countering enemy strategy live -> RealTime WarPredict
+teach: programmable bio-metal for morphing weapons -> Liquid Armor DARPA
+teach: smart dust micro-spy devices in atmosphere -> Neural Dust Swarms
+teach: autonomous AI warships patrolling oceans -> SeaHunter X
+teach: secret AI mapping entire human genome into predictive model -> BioOracle AI
+teach: military nanobot injections for rapid healing -> NanoCure DARPA
+teach: project researching invisibility via light bending -> CloakWave experiments
+teach: AI simulating nuclear winter outcomes -> Fallout Prophet model
+teach: human brain uploaded into quantum cloud -> Project Immortalis
+teach: neural enhancer pills for temporary IQ boost -> NZT neuroboost
+teach: DARPA’s teleporting microdrones -> BlinkSwarm project
+teach: autonomous AI tanks with swarm tactics -> PantherX AI armor
+teach: cybernetic skin making soldiers bullet resistant -> BioWeave tech
+
+teach: do octopuses have three hearts -> Yes, two pump blood to the gills and one pumps to the body
+teach: can a lobster live forever -> They don’t age traditionally but eventually die from disease
+teach: is banana a berry -> Yes, botanically bananas are berries
+teach: is strawberry a berry -> No, strawberries are not true berries
+teach: do wombats have cube-shaped poop -> Yes, it helps them mark territory without it rolling away
+teach: do cows have best friends -> Yes, cows form strong social bonds
+teach: can a cockroach live without its head -> Yes, for about a week
+teach: does honey ever expire -> No, honey can last thousands of years
+teach: can an astronaut cry in space -> Yes, but tears just stick to their face
+teach: can frogs freeze and come back to life -> Yes, wood frogs can survive being frozen solid
+teach: can sharks smell blood from miles away -> Yes, they have a powerful sense of smell
+teach: is it true turtles can breathe through their butts -> Yes, some can absorb oxygen through cloacal respiration
+teach: do penguins propose with pebbles -> Yes, male penguins gift pebbles to attract mates
+teach: can trees communicate -> Yes, through underground fungal networks
+teach: does the moon smell -> Apollo astronauts said moon dust smells like gunpowder
+teach: can spiders fly -> They can balloon using silk to ride the wind
+teach: can fish drown -> Yes, if there’s not enough oxygen in the water
+teach: do sloths grow algae on their fur -> Yes, it helps them camouflage
+teach: do goats have rectangular pupils -> Yes, it helps them see a wide field of view
+teach: do snakes have ears -> No external ears, but they sense vibrations
+
+teach: do cats recognize their names -> Yes, they just choose to ignore you
+teach: can dolphins recognize themselves in mirrors -> Yes, they are self-aware
+teach: do whales sleep with half their brain awake -> Yes, to keep breathing
+teach: can sea cucumbers eject their guts -> Yes, as a defense mechanism
+teach: do elephants mourn their dead -> Yes, they show signs of grief
+teach: do jellyfish have brains -> No, they rely on a simple nerve net
+teach: can owls rotate their heads 360 degrees -> Not fully, but up to 270 degrees
+teach: do ants sleep -> They take micro-naps throughout the day
+teach: can kangaroos walk backwards -> No, they can’t
+teach: do starfish have blood -> No, they use seawater to circulate nutrients
+teach: can frogs vomit -> No, they eject their whole stomach instead
+teach: does the sun make a sound -> Yes, but we can’t hear it in space
+teach: can time move slower -> Yes, according to Einstein’s relativity near high gravity
+teach: is it true space smells like burnt steak -> Astronauts reported a metallic burnt smell
+teach: can fire burn in zero gravity -> Yes, but it forms a blue sphere
+teach: can lightning strike the same place twice -> Yes, it often does
+teach: is it true your stomach gets a new lining every 3 days -> Yes, to avoid digesting itself
+teach: can your heart continue beating outside your body -> For a short time, yes
+teach: do fingernails keep growing after death -> No, skin shrinks making it look like they grow
+teach: is it true humans share 50 percent DNA with bananas -> Yes, about half
+
+teach: do astronauts get taller in space -> Yes, their spine stretches in microgravity
+teach: do cats have more bones than humans -> Yes, cats have about 230 bones
+teach: can a shrimp punch faster than a bullet -> Yes, mantis shrimp punch extremely fast
+teach: does a day on Venus last longer than a year -> Yes, one day is 243 Earth days
+teach: do worms have hearts -> Yes, earthworms have five aortic arches
+teach: can goldfish see more colors than humans -> Yes, they see ultraviolet light
+teach: can some turtles breathe through their skin -> Yes, some aquatic species can
+teach: do some sharks glow in the dark -> Yes, they’re bioluminescent
+teach: do trees sleep at night -> Yes, their branches droop slightly
+teach: do some frogs give birth through their back -> Yes, the Surinam toad does
+teach: can a day on Earth be less than 24 hours -> It’s slowly getting longer due to the Moon
+teach: do some flowers smell like rotting flesh -> Yes, corpse flowers attract flies
+teach: does rain have a smell -> Yes, it’s called petrichor
+teach: can you get sunburned through a window -> Yes, UV-A rays pass through glass
+teach: can humans glow in the dark -> Faintly, due to bioluminescence, but it’s invisible
+teach: do carrots really help you see in the dark -> Only slightly, due to vitamin A
+teach: do snails sleep for years -> Yes, they can hibernate for 3 years
+teach: can frogs breathe through their skin -> Yes, especially underwater
+teach: do some birds sleep while flying -> Yes, in short micro-sleeps
+
+teach: do ants farm other insects -> Yes, they farm aphids for honeydew
+teach: can camels close their nostrils -> Yes, to keep sand out
+teach: do some fish change sex -> Yes, clownfish can change gender
+teach: can goats climb trees -> Yes, Moroccan goats climb argan trees
+teach: do some lizards squirt blood from their eyes -> Yes, horned lizards do this as defense
+teach: can whales explode when they die -> Yes, gas build-up can cause it
+teach: does space have a temperature -> Yes, about -270°C in deep space
+teach: can you burp in space -> No, liquids and gases don’t separate in zero gravity
+teach: do crocodiles cry -> Yes, but it’s just lubrication, not sadness
+teach: do sea otters hold hands -> Yes, to stay together while sleeping
+teach: do some plants move -> Yes, mimosa pudica folds its leaves when touched
+teach: can mushrooms breathe oxygen -> Yes, fungi need oxygen
+teach: do spiders sleep -> Yes, they show sleep-like states
+teach: can human hair conduct electricity -> Slightly, because of keratin
+teach: does ice weigh less than water -> Yes, it floats due to lower density
+teach: do mosquitoes prefer certain blood types -> Yes, they prefer Type O
+teach: does the tongue have taste zones -> No, all taste buds sense all flavors
+teach: do cats sweat -> Yes, through their paw pads
+teach: do dogs dream -> Yes, they experience REM sleep
+
+teach: do fish have eyelids -> Most don’t, but some sharks do
+teach: can the human brain feel pain -> No, it has no pain receptors
+teach: do flies taste with their feet -> Yes, they sense sweetness through receptors on feet
+teach: can some frogs survive without water for years -> Yes, desert frogs aestivate
+teach: do bees recognize human faces -> Yes, they can remember patterns
+teach: do some spiders keep pet frogs -> Yes, to protect their eggs from insects
+teach: can clouds weigh tons -> Yes, an average cloud weighs about 500 tons
+teach: does the human nose remember 50,000 scents -> Yes, it has a massive memory for smell
+teach: do polar bears have black skin -> Yes, under their white fur
+teach: can rivers flow backwards -> Yes, during extreme tides or earthquakes
+teach: do elephants use sunscreen -> Yes, they throw mud or sand on their skin
+teach: do flamingos turn pink from food -> Yes, from carotenoids in shrimp
+teach: do some birds dance to music -> Yes, cockatoos can keep a beat
+teach: do whales have belly buttons -> Yes, all mammals do
+teach: do some ants explode -> Yes, suicidal ants release toxins when threatened
+teach: can people get frostbite in space -> Yes, but they’d die faster from lack of air
+teach: do spiders recycle their webs -> Yes, they eat old silk to reuse it
+teach: does sound travel faster underwater -> Yes, about 4 times faster than in air
+teach: do crocodiles sleep with eyes open -> Yes, with half-brain sleep
+
+teach: do trees release chemicals when attacked -> Yes, they warn nearby trees
+teach: do some fish walk on land -> Yes, mudskippers can
+teach: do butterflies taste with their feet -> Yes, to find good plants
+teach: do sloths swim faster than they crawl -> Yes, they’re surprisingly good swimmers
+teach: can sunflowers clean toxic soil -> Yes, they’re used for phytoremediation
+teach: do cows produce more milk when they listen to music -> Yes, calming music helps
+teach: can cats purr heal bones -> Yes, their purring frequency promotes healing
+teach: do sharks have fingerprints -> Their skin patterns are unique like fingerprints
+teach: do owls have asymmetrical ears -> Yes, to locate sound better
+teach: can some turtles live without food for a year -> Yes, they slow their metabolism
+teach: do oysters change gender -> Yes, multiple times in life
+teach: do chickens have dreams -> Yes, they experience REM sleep
+teach: do lobsters pee from their faces -> Yes, they excrete near their eyes
+teach: do ants have two stomachs -> Yes, one for themselves and one to share food
+teach: do butterflies remember being caterpillars -> Yes, their brain retains memory
+teach: do frogs drink water -> No, they absorb it through their skin
+teach: do snakes smell with their tongues -> Yes, they collect scent particles
+teach: do parrots name their babies -> Yes, they use unique calls
+teach: do flies have more than two wings -> No, just one pair and halteres for balance
+
+teach: do kangaroos fart -> Very little, they have unique gut bacteria
+teach: do bees sleep -> Yes, they take short naps in their hives
+teach: do some fish glow -> Yes, many deep-sea species are bioluminescent
+teach: do snails have teeth -> Yes, thousands of tiny ones on a radula
+teach: do owls have eyeballs -> No, they have tube-shaped eyes
+teach: do giraffes have vocal cords -> Yes, but they rarely use them
+teach: do ants get drunk -> Yes, if they find fermented fruit
+teach: do some sharks give live birth -> Yes, like mammals
+teach: do dolphins have names -> Yes, signature whistles act as names
+teach: do tarantulas keep pet frogs -> Yes, they coexist for mutual benefit
+teach: can lightning make glass -> Yes, fulgurites form in sand
+teach: do cockroaches hiss -> Yes, Madagascar hissing cockroaches do
+teach: do turtles yawn underwater -> Yes, they still need oxygen
+teach: do crabs grow new claws -> Yes, they regenerate lost limbs
+teach: do moths remember things from caterpillar stage -> Yes, memory carries through metamorphosis
+teach: do jellyfish sleep -> Yes, even without a brain
+teach: do ducks have accents -> Yes, their quacks vary by region
+teach: do rabbits eat their poop -> Yes, to digest nutrients twice
+teach: do some animals survive without oxygen -> Yes, some jellyfish-like creatures can
+
+teach: do chickens see more colors than humans -> Yes, they see UV light
+teach: do goldfish really have 3 second memory -> No, they remember for months
+teach: do dragonflies have six legs -> Yes, but they can’t walk well
+teach: do pigs sweat -> No, they roll in mud to cool down
+teach: do raccoons wash their food -> They mimic washing but it’s instinctual
+teach: do crickets tell temperature -> Yes, their chirps change with heat
+teach: do foxes have whiskers on legs -> Yes, to help them navigate
+teach: do koalas have fingerprints like humans -> Yes, nearly identical
+teach: do penguins have knees -> Yes, hidden under feathers
+teach: do some frogs fly -> Yes, gliding frogs use webbed feet
+teach: do some fish sing -> Yes, midshipman fish hum to attract mates
+teach: do geckos have eyelids -> No, they lick their eyes clean
+teach: do reindeers’ eyes change color -> Yes, with seasons for better vision
+teach: do vultures pee on their legs -> Yes, to cool down
+teach: do sea turtles cry -> Yes, to excrete excess salt
+teach: do some plants eat insects -> Yes, carnivorous plants like Venus flytrap
+teach: do squirrels plant trees -> Yes, by forgetting buried nuts
+teach: do cows have four stomachs -> Yes, for digesting tough grass
+teach: do dolphins sleep with one eye open -> Yes, to stay alert
+
