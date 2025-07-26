@@ -1513,3 +1513,222 @@ teach: do squirrels plant trees -> Yes, by forgetting buried nuts
 teach: do cows have four stomachs -> Yes, for digesting tough grass
 teach: do dolphins sleep with one eye open -> Yes, to stay alert
 
+teach: What is the capital of France? -> Paris.
+teach: Who painted the Mona Lisa? -> Leonardo da Vinci.
+teach: What is the largest planet in our solar system? -> Jupiter.
+teach: How many continents are there on Earth? -> Seven.
+teach: What is the boiling point of water at sea level? -> 100°C (212°F).
+teach: Who wrote “Romeo and Juliet”? -> William Shakespeare.
+teach: What is the chemical symbol for gold? -> Au.
+teach: Which ocean is the largest? -> The Pacific Ocean.
+teach: How many colors are in a rainbow? -> Seven.
+teach: Who was the first person to walk on the moon? -> Neil Armstrong.
+
+teach: What is the fastest land animal? -> The cheetah.
+teach: What is the tallest mountain in the world? -> Mount Everest.
+teach: Which country is known as the Land of the Rising Sun? -> Japan.
+teach: What gas do plants absorb for photosynthesis? -> Carbon dioxide.
+teach: What is the smallest prime number? -> 2.
+teach: What is the currency of the United Kingdom? -> Pound sterling.
+teach: Who invented the telephone? -> Alexander Graham Bell.
+teach: What is the freezing point of water in Celsius? -> 0°C.
+teach: Which planet is known as the Red Planet? -> Mars.
+teach: How many degrees are in a right angle? -> 90 degrees.
+
+teach: What is the largest mammal in the world? -> The blue whale.
+teach: What is the main language spoken in Brazil? -> Portuguese.
+teach: What is the square root of 64? -> 8.
+teach: Which fruit is known as the “king of fruits”? -> Mango.
+teach: Who developed the theory of relativity? -> Albert Einstein.
+teach: How many sides does a hexagon have? -> Six.
+teach: Which planet has the most moons? -> Saturn.
+teach: What is the longest river in the world? -> The Nile River.
+teach: Which organ pumps blood through the body? -> The heart.
+teach: What is the national flower of the USA? -> The rose.
+
+teach: What is the chemical formula for water? -> H2O.
+teach: Who is the author of “Harry Potter”? -> J.K. Rowling.
+teach: Which planet is closest to the sun? -> Mercury.
+teach: How many hours are there in a day? -> 24 hours.
+teach: What is the fastest bird? -> The peregrine falcon.
+teach: What is the currency of Japan? -> Yen.
+teach: Which continent is the Sahara Desert on? -> Africa.
+teach: What is the smallest country in the world? -> Vatican City.
+teach: What is the name of the fairy in Peter Pan? -> Tinker Bell.
+teach: What is the national sport of Canada? -> Ice hockey.
+
+teach: What is the main ingredient in bread? -> Flour.
+teach: Who discovered gravity? -> Isaac Newton.
+teach: What is the largest desert in the world? -> The Antarctic Desert.
+teach: How many letters are in the English alphabet? -> 26.
+teach: What do bees collect from flowers? -> Nectar.
+teach: What is the tallest animal on Earth? -> The giraffe.
+teach: Who was the first president of the United States? -> George Washington.
+teach: What is the main gas found in the air we breathe? -> Nitrogen.
+teach: How many legs does a spider have? -> Eight.
+teach: What is the main ingredient in guacamole? -> Avocado.
+
+teach: What is the hardest natural substance? -> Diamond.
+teach: Which country is famous for the Eiffel Tower? -> France.
+teach: What is the plural of mouse? -> Mice.
+teach: What is the largest organ in the human body? -> The skin.
+teach: Which animal is known as the King of the Jungle? -> The lion.
+teach: What is the chemical symbol for oxygen? -> O.
+teach: Which sea creature has three hearts? -> The octopus.
+teach: How many strings does a standard guitar have? -> Six.
+teach: Which holiday is celebrated on December 25th? -> Christmas.
+teach: What is the national bird of the United States? -> The bald eagle.
+
+teach: Who is known as the Father of Computers? -> Charles Babbage.
+teach: What is the main language spoken in China? -> Mandarin.
+teach: Which blood type is known as the universal donor? -> O negative.
+teach: What is the capital of Australia? -> Canberra.
+teach: How many bones are in the adult human body? -> 206.
+teach: What is the largest island in the world? -> Greenland.
+teach: Which instrument has black and white keys? -> Piano.
+teach: What is the main ingredient in sushi? -> Rice.
+teach: What is the smallest bone in the human body? -> The stapes in the ear.
+teach: How many days are in a leap year? -> 366.
+
+teach: Which bird is a symbol of peace? -> The dove.
+teach: What is the capital city of Italy? -> Rome.
+teach: What is the main ingredient in hummus? -> Chickpeas.
+teach: Who is the Greek god of the sea? -> Poseidon.
+teach: Which planet is known for its rings? -> Saturn.
+teach: How many continents are there? -> Seven.
+teach: What color do you get when you mix red and blue? -> Purple.
+teach: Who invented the light bulb? -> Thomas Edison.
+teach: Which fruit has its seeds on the outside? -> Strawberry.
+teach: How many teeth does an adult human usually have? -> 32.
+
+teach: What is the fastest marine mammal? -> The common dolphin.
+teach: Which country gifted the Statue of Liberty to the USA? -> France.
+teach: How many time zones does the world have? -> 24.
+teach: What is the process of water turning into vapor called? -> Evaporation.
+teach: Which planet is called Earth’s twin? -> Venus.
+teach: What is the chemical symbol for sodium? -> Na.
+teach: How many players are on a soccer team? -> Eleven.
+teach: Which animal can change its color? -> Chameleon.
+teach: What is the currency of India? -> Rupee.
+teach: Which festival is known as the Festival of Lights in India? -> Diwali.
+
+teach: What is the longest bone in the human body? -> The femur.
+teach: Which country is home to the kangaroo? -> Australia.
+teach: What is the largest ocean animal? -> The blue whale.
+teach: What type of star is the sun? -> A yellow dwarf star.
+teach: How many minutes are in an hour? -> 60.
+teach: What is the study of weather called? -> Meteorology.
+teach: Who painted The Starry Night? -> Vincent van Gogh.
+teach: What is the smallest planet in our solar system? -> Mercury.
+teach: How many planets are in our solar system? -> Eight.
+teach: Which is the hottest planet? -> Venus.
+
+teach: What is the national fruit of India? -> Mango.
+teach: What is the world’s most spoken language? -> English.
+teach: Which animal lays the largest eggs? -> Ostrich.
+teach: How many hearts does an octopus have? -> Three.
+teach: What is the study of fossils called? -> Paleontology.
+teach: Which organ helps you breathe? -> Lungs.
+teach: How many chambers does the human heart have? -> Four.
+teach: Which planet is famous for its giant storm called the Great Red Spot? -> Jupiter.
+teach: Which bird can mimic human speech? -> Parrot.
+teach: What do you call a baby frog? -> Tadpole.
+
+teach: What is the fear of spiders called? -> Arachnophobia.
+teach: Which famous scientist is known for the laws of motion? -> Isaac Newton.
+teach: What is the tallest building in the world? -> Burj Khalifa.
+teach: Which fish is known for its ability to inflate? -> Pufferfish.
+teach: What is the main gas in Earth’s atmosphere? -> Nitrogen.
+teach: Which vitamin is produced when you get sunlight? -> Vitamin D.
+teach: What do you call animals that eat only plants? -> Herbivores.
+teach: Who wrote “The Little Prince”? -> Antoine de Saint-Exupéry.
+teach: What is the largest type of big cat? -> The Siberian tiger.
+teach: What is the main ingredient in chocolate? -> Cocoa beans.
+
+teach: Which planet rotates on its side? -> Uranus.
+teach: Which insect produces honey? -> The honeybee.
+teach: What is the fastest-growing plant? -> Bamboo.
+teach: What is the study of stars and planets called? -> Astronomy.
+teach: Who invented the World Wide Web? -> Tim Berners-Lee.
+teach: How many months have 31 days? -> Seven.
+teach: Which fruit is yellow and curved? -> Banana.
+teach: What is the name of the largest rainforest on Earth? -> The Amazon Rainforest.
+teach: What is the opposite of north? -> South.
+teach: How many wheels does a tricycle have? -> Three.
+
+teach: What is the currency of China? -> Yuan (Renminbi).
+teach: Who is the author of “The Hobbit”? -> J.R.R. Tolkien.
+teach: Which shape has four equal sides? -> Square.
+teach: How many legs does an ant have? -> Six.
+teach: What do you call molten rock after it erupts from a volcano? -> Lava.
+teach: Which organ detoxifies your body? -> The liver.
+teach: Which continent is the largest? -> Asia.
+teach: What is the fastest human sense? -> Hearing.
+teach: Which bird is known for its long migration? -> The Arctic tern.
+teach: What is the color of chlorophyll? -> Green.
+
+teach: What is the largest living reptile? -> The saltwater crocodile.
+teach: Which bird cannot fly? -> The ostrich.
+teach: What is the study of the human mind called? -> Psychology.
+teach: Which planet has the most moons? -> Saturn.
+teach: What is the coldest place on Earth? -> Antarctica.
+teach: Which animal sleeps standing up? -> Horse.
+teach: What is the national flower of Japan? -> Cherry blossom.
+teach: Which country is called the Land of the Rising Sun? -> Japan.
+teach: What type of blood cells help fight infections? -> White blood cells.
+teach: What is the capital of Egypt? -> Cairo.
+
+teach: Which fruit is known as the king of fruits? -> Mango.
+teach: What do you call a group of lions? -> A pride.
+teach: What is the square root of 64? -> 8.
+teach: Which ocean is the largest? -> The Pacific Ocean.
+teach: Who wrote “Romeo and Juliet”? -> William Shakespeare.
+teach: What is the smallest ocean in the world? -> Arctic Ocean.
+teach: How many degrees are in a circle? -> 360.
+teach: What is the freezing point of water in Celsius? -> 0 degrees Celsius.
+teach: Which animal has the longest lifespan? -> The bowhead whale.
+teach: What is the fastest land animal? -> The cheetah.
+
+teach: Who painted the Mona Lisa? -> Leonardo da Vinci.
+teach: Which country is famous for the Great Wall? -> China.
+teach: How many players are on a basketball team? -> Five.
+teach: What is the currency of the United Kingdom? -> Pound sterling.
+teach: What is the main ingredient in bread? -> Flour.
+teach: Which bird is a universal symbol of freedom? -> Eagle.
+teach: What is the chemical symbol for iron? -> Fe.
+teach: Which organ pumps blood in the human body? -> Heart.
+teach: Which country is home to the Great Barrier Reef? -> Australia.
+teach: What is the name of the galaxy we live in? -> The Milky Way.
+
+teach: Which instrument measures temperature? -> Thermometer.
+teach: How many colors are in a rainbow? -> Seven.
+teach: Which planet is farthest from the sun? -> Neptune.
+teach: What do you call a young sheep? -> Lamb.
+teach: What is the longest river in the world? -> Nile River.
+teach: Which festival is celebrated with fireworks in the USA on July 4th? -> Independence Day.
+teach: Which shape has three sides? -> Triangle.
+teach: Who discovered penicillin? -> Alexander Fleming.
+teach: What is the largest land animal? -> African elephant.
+teach: What is the color of the sky on a clear day? -> Blue.
+
+teach: What is the main ingredient in pasta? -> Wheat.
+teach: How many legs does a butterfly have? -> Six.
+teach: Which animal is known for its black and white stripes? -> Zebra.
+teach: Who is the Greek god of war? -> Ares.
+teach: What is the opposite of hot? -> Cold.
+teach: Which planet is famous for its blue color? -> Neptune.
+teach: What do you call a person who writes books? -> Author.
+teach: What is the name of Earth’s natural satellite? -> The Moon.
+teach: What is the process by which plants make their food? -> Photosynthesis.
+teach: What is the tallest mountain in the world? -> Mount Everest.
+
+teach: Which animal is known as man’s best friend? -> Dog.
+teach: What is the chemical symbol for water? -> H2O.
+teach: Which metal is liquid at room temperature? -> Mercury.
+teach: Who is the Roman goddess of love? -> Venus.
+teach: Which gas do humans exhale? -> Carbon dioxide.
+teach: What is the first element on the periodic table? -> Hydrogen.
+teach: Which sport uses a shuttlecock? -> Badminton.
+teach: Which fruit is used to make wine? -> Grapes.
+teach: How many weeks are in a year? -> 52.
+teach: What is the name of the world’s largest coral reef? -> The Great Barrier Reef.
