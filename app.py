@@ -467,6 +467,14 @@ def history():
     chats = get_chat_history(username)
     return render_template("history.html", username=username, chats=chats)
 
+def get_chat_history(username):
+    conn = get_db()
+    c = conn.cursor()
+    c.execute("SELECT role, content, timestamp FROM chat_history WHERE username=? ORDER BY id ASC", (username,))
+    rows = c.fetchall()
+    conn.close()
+    return rows
+
 @app.route('/clear_history', methods=['POST'])
 def clear_history():
     if 'user' not in session:
