@@ -6,6 +6,19 @@ from datetime import datetime, date
 from dotenv import load_dotenv
 # import redis 
 import re
+import wikipedia
+
+# ✅ Wikipedia summary helper
+def wiki_summary(query):
+    try:
+        wikipedia.set_lang("en")
+        return wikipedia.summary(query, sentences=2)
+    except wikipedia.exceptions.DisambiguationError as e:
+        return f"🤔 That’s a bit vague. Did you mean: {', '.join(e.options[:5])}?"
+    except wikipedia.exceptions.PageError:
+        return None
+    except Exception:
+        return None
 
 # ✅ Load env
 load_dotenv()
@@ -343,7 +356,7 @@ def chatbot_reply(username, message):
         save_chat(username, "bot", reply)
         return reply
 
-    # 5️⃣ Normal responses
+       # 5️⃣ Normal responses
     if "hello" in msg or "hi" in msg:
         reply = f"Hello {username}! 👋 Want a joke or a fun fact?"
     elif "joke" in msg:
@@ -351,7 +364,13 @@ def chatbot_reply(username, message):
     elif "fact" in msg:
         reply = random.choice(fun_facts)
     else:
-        reply = "🤔 I’m not sure. You can teach me: teach: question -> answer"
+        # ✅ Try Wikipedia before giving up
+        wiki_result = wiki_summary(message)
+        if wiki_result:
+            reply = f"📖 According to Wikipedia:\n{wiki_result}"
+        else:
+            reply = "🤔 I’m not sure. You can teach me: teach: question -> answer"
+
 
     # 6️⃣ Cache & return
     if cache:
