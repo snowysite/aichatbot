@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎉 Premium Activated</title>
+   <link rel="icon" type="image/ico" href="{{ url_for('static', filename='favicon.ico') }}?v=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <style>
+    body {
+      background: #000;
+      color: #ffa500;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .card {
+      background: #111;
+      border: 1px solid #ffa500;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 165, 0, 0.3);
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #ff8c00;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    .btn-chat {
+      margin-top: 25px;
+      background: linear-gradient(135deg, #ff8c00, #ffa500);
+      border: none;
+      color: #000;
+      font-weight: bold;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+      transition: 0.3s ease;
+    }
+
+    .btn-chat:hover {
+      opacity: 0.85;
+    }
+
+    @media (max-width: 576px) {
+      .card {
+        padding: 25px;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .btn-chat {
+        width: 100%;
+        padding: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>🎉 Premium Activated!</h1>
+    <p>Welcome to Nexora Premium. You now have unlimited access and priority support.</p>
+    <a href="{{ url_for('home') }}" class="btn-chat">⬅ Back to Chat</a>
+  </div>
+
+</body>
+</html>
