@@ -3,13 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>📜 Chat History</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Added -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <style>
     body {
-      background: #000; /* black background */
-      color: #ffa500; /* orange text */
+      background: #000;
+      color: #ffa500;
       font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
     }
+
     .chat-card {
       background: #111;
       border: 1px solid #ffa500;
@@ -18,42 +22,68 @@
       max-height: 500px;
       overflow-y: auto;
     }
+
     .chat-item {
       padding: 10px;
       margin-bottom: 8px;
       background: #1a1a1a;
       border-left: 4px solid #ffa500;
       border-radius: 5px;
+      word-wrap: break-word;
     }
+
     .chat-item strong {
       color: #ff6600;
     }
+
     .btn-orange {
       background: #ff6600;
       color: #000;
       border: none;
     }
+
     .btn-orange:hover {
       background: #ff8533;
       color: #000;
     }
+
     h3 {
       color: #ff6600;
       text-align: center;
-      margin-bottom: 20px;
+      margin: 20px 0;
     }
+
     .action-buttons {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
-      margin-top: 15px;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 576px) {
+      .chat-card {
+        max-height: 400px;
+        padding: 10px;
+      }
+
+      .action-buttons {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .btn,
+      form button {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
 
-<div class="container mt-4">
+<div class="container mt-4 mb-4">
   <h3>📜 Chat History for {{ username }}</h3>
-  
+
   <div class="chat-card shadow">
     {% for role, content, timestamp in chats %}
       <div class="chat-item">
