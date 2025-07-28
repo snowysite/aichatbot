@@ -183,7 +183,7 @@ jokes = [
 # ✅ Plugin System
 class QuizPlugin:
     name = "QuizPlugin"
-    def _init_(self):
+    def __init__(self):
         self.questions = {
             "What is 2 + 2?": "4",
             "Capital of France?": "paris",
@@ -197,7 +197,7 @@ class QuizPlugin:
 
 class GuessWordPlugin:
     name = "GuessWordPlugin"
-    def _init_(self):
+    def __init__(self):
         self.words = ["apple", "mango", "grape", "lemon"]
     def can_handle(self, msg):
         return "guess" in msg.lower()
@@ -576,31 +576,30 @@ def clear_history():
     conn.commit()
     conn.close()
     return redirect(url_for('history'))
+# ✅ Ensure guest user exists for unauthenticated WebSocket clients
+def ensure_guest_user():
+    if not get_user("guest"):
+        create_user("guest", "guest@example.com", "guest123")
 
 # ✅ WebSocket handlers
 @socketio.on('connect')
 def ws_connect():
+    ensure_guest_user()
     print("✅ Client connected!")
     emit("bot_reply", "🤖 SJ is online ! Say hi 👋")
 
-# @socketio.on('user_message')
-# def ws_user_message(msg):
-#     print(f"📩 WS message: {msg}")
-#     username = session.get("user") or "guest"
-#     reply = chatbot_reply(username, msg)
-#     emit('bot_reply', reply)
-
 @socketio.on('user_message')
-def ws_user_message(data):
-    username = data.get("username", "guest")
-    msg = data.get("msg", "")
+def ws_user_message(msg):
+    print(f"📩 WS message: {msg}")
+    username = session.get("user", "guest")
+    print(f"🧾 WebSocket session user: {username}")
     reply = chatbot_reply(username, msg)
     emit('bot_reply', reply)
+
 
 @socketio.on('disconnect')
 def ws_disconnect():
     print("❌ Client disconnected!")
 
-# ✅ Run server
 if __name__ == "__main__":
     socketio.run(app, debug=True)
