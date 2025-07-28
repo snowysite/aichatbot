@@ -111,6 +111,58 @@ def normalize_text(txt: str) -> str:
     """Lowercase and remove punctuation for better matching"""
     return re.sub(r"[^a-z0-9 ]+", "", txt.lower()).strip()
 
+
+# ✅ Ensure dynamic content table exists
+def ensure_dynamic_content_table():
+    conn = sqlite3.connect(DB_FILE)
+    c = conn.cursor()
+    c.execute('''
+        CREATE TABLE IF NOT EXISTS dynamic_content (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            category TEXT,
+            content TEXT,
+            source TEXT,
+            created_at TEXT
+        )
+    ''')
+    conn.commit()
+    conn.close()
+
+ensure_dynamic_content_table()
+
+# ✅ Store new fetched content
+def save_dynamic_content(category, content, source):
+    conn = sqlite3.connect(DB_FILE)
+    c = conn.cursor()
+    c.execute("INSERT INTO dynamic_content (category, content, source, created_at) VALUES (?, ?, ?, ?)",
+              (category, content, source, datetime.now().isoformat()))
+    conn.commit()
+    conn.close()
+
+# ✅ Fetch dynamic content if needed
+def get_dynamic_info(category):
+    conn = sqlite3.connect(DB_FILE)
+    c = conn.cursor()
+    c.execute("SELECT content FROM dynamic_content WHERE category = ? ORDER BY RANDOM() LIMIT 1", (category,))
+    row = c.fetchone()
+    conn.close()
+    if row:
+        return row[0]
+    else:
+        # Fallback fetch from online source
+        if category == "career":
+            result = duckduckgo_summary("career guidance for youth")
+        elif category == "emotional":
+            result = duckduckgo_summary("emotional support tips")
+        elif category == "fun":
+            result = duckduckgo_summary("fun facts or jokes")
+        else:
+            result = None
+
+        if result:
+            save_dynamic_content(category, result, "duckduckgo")
+        return result
+
 # ✅ Fun facts & jokes
 fun_facts = [
     "Honey never spoils. Archaeologists have eaten 3000-year-old honey!",
@@ -301,7 +353,7 @@ def chatbot_reply(username, message):
             return reply
 
     if "your name" in msg or "who are you" in msg:
-        reply = "My name is SJ 🤖"
+        reply = "My name is SJ 🤖. I'm your friendly AI buddy!"
         save_chat(username, "bot", reply)
         return reply
 
@@ -370,15 +422,27 @@ def chatbot_reply(username, message):
     elif "fact" in msg:
         reply = random.choice(fun_facts)
     else:
-        wiki_result = wiki_summary(message)
-        if wiki_result:
-            reply = f"📖 According to Wikipedia:\n{wiki_result}"
-        else:
-            duck_result = duckduckgo_summary(message)
-            if duck_result:
-                reply = f"🔍 From DuckDuckGo:\n{duck_result}"
+        # 🔍 Career guidance, support, or entertainment query check
+        if any(keyword in msg for keyword in ["career", "job", "motivation", "fun", "entertain", "support"]):
+            web_info = duckduckgo_summary(message)
+            if web_info:
+                reply = f"🌐 Here's something helpful I found for you:\n\n{web_info}"
             else:
-                reply = "🤔 I’m not sure. You can teach me: teach: question -> answer"
+                wiki_result = wiki_summary(message)
+                if wiki_result:
+                    reply = f"📖 Here's something helpful I found for you:\n\n{wiki_result}"
+                else:
+                    reply = "🤔 I couldn't find anything helpful. You can teach me using: teach: question -> answer"
+        else:
+            web_info = duckduckgo_summary(message)
+            if web_info:
+                reply = f"🧠 Based on what I found online, here’s a good explanation:\n\n{web_info}"
+            else:
+                wiki_result = wiki_summary(message)
+                if wiki_result:
+                    reply = f"📖 Funny truth :\n\n{wiki_result}"
+                else:
+                    reply = "🤔 I’m not sure. You can teach me: teach: question -> answer"
 
     if cache:
         cache.setex(cache_key, 3600, reply)
@@ -519,10 +583,17 @@ def ws_connect():
     print("✅ Client connected!")
     emit("bot_reply", "🤖 SJ is online ! Say hi 👋")
 
+# @socketio.on('user_message')
+# def ws_user_message(msg):
+#     print(f"📩 WS message: {msg}")
+#     username = session.get("user") or "guest"
+#     reply = chatbot_reply(username, msg)
+#     emit('bot_reply', reply)
+
 @socketio.on('user_message')
-def ws_user_message(msg):
-    print(f"📩 WS message: {msg}")
-    username = session.get("user", "guest")
+def ws_user_message(data):
+    username = data.get("username", "guest")
+    msg = data.get("msg", "")
     reply = chatbot_reply(username, msg)
     emit('bot_reply', reply)
 
