@@ -199,7 +199,13 @@
   </form>
 
   <script>
-  const socket = io();
+ const socket = io({
+  transports: ["websocket"],
+  query: {
+    username: "{{ username }}"
+  }
+});
+
     const chatBox = document.getElementById("chat-box");
     const form = document.getElementById("chat-form");
     const input = document.getElementById("user-input");
