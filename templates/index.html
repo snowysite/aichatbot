@@ -199,7 +199,9 @@
   </form>
 
   <script>
-    const socket = io({ transports: ["polling"] });
+   const socket = io("https://aichatbot-t3fz.onrender.com", {
+  transports: ["websocket", "polling"]
+});
     const chatBox = document.getElementById("chat-box");
     const form = document.getElementById("chat-form");
     const input = document.getElementById("user-input");
