@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 # import redis 
 import re
 import wikipedia
+import requests
 
 # ✅ Wikipedia summary helper
 def wiki_summary(query):
@@ -19,6 +20,20 @@ def wiki_summary(query):
         return None
     except Exception:
         return None
+    
+    # ✅ DuckDuckGo fallback search
+def duckduckgo_summary(query):
+    try:
+        res = requests.get(f"https://api.duckduckgo.com/?q={query}&format=json").json()
+        abstract = res.get("Abstract")
+        if abstract:
+            return abstract
+        related = res.get("RelatedTopics")
+        if related and isinstance(related, list) and "Text" in related[0]:
+            return related[0]["Text"]
+    except:
+        pass
+    return None
 
 # ✅ Load env
 load_dotenv()
@@ -278,7 +293,6 @@ def chatbot_reply(username, message):
 
     cache_key = f"reply:{msg}"
 
-    # ✅ Only try cache if available
     if cache:
         cached = cache.get(cache_key)
         if cached:
@@ -286,13 +300,11 @@ def chatbot_reply(username, message):
             save_chat(username, "bot", reply)
             return reply
 
-
-    # ✅ ALWAYS respond to "what is your name" or similar
     if "your name" in msg or "who are you" in msg:
         reply = "My name is SJ 🤖"
         save_chat(username, "bot", reply)
         return reply
-    # ✅ Greeting keywords
+
     greetings = [
         "hi", "hey", "hello", "yo", "sup", "whats up",
         "what's up", "howdy", "hola", "heyy", "hiya",
@@ -300,7 +312,6 @@ def chatbot_reply(username, message):
         "how are you", "how r u", "how are u", "how you doing"
     ]
 
-    # ✅ Detect greetings (loose match)
     if any(word in msg for word in greetings):
         reply = random.choice([
             f"Hey {username}! 👋 How’s your day going?",
@@ -313,7 +324,6 @@ def chatbot_reply(username, message):
         save_chat(username, "bot", reply)
         return reply
 
-    # 🆕 Help for teaching
     if "how do i teach" in msg or ("teach" in msg and "->" not in msg):
         reply = (
             "📚 To teach me something new, use this format:\n\n"
@@ -325,7 +335,6 @@ def chatbot_reply(username, message):
         save_chat(username, "bot", reply)
         return reply
 
-    # 2️⃣ Plugins
     for plugin in PLUGINS:
         if plugin.can_handle(msg):
             reply = plugin.handle(username, msg)
@@ -334,7 +343,6 @@ def chatbot_reply(username, message):
             save_chat(username, "bot", reply)
             return reply
 
-    # 3️⃣ Learned knowledge
     known_answer = get_knowledge_answer(msg)
     if known_answer:
         reply = known_answer
@@ -343,7 +351,6 @@ def chatbot_reply(username, message):
         save_chat(username, "bot", reply)
         return reply
 
-    # 4️⃣ Teach mode
     if msg.startswith("teach:"):
         try:
             parts = message.split("->")
@@ -356,7 +363,6 @@ def chatbot_reply(username, message):
         save_chat(username, "bot", reply)
         return reply
 
-       # 5️⃣ Normal responses
     if "hello" in msg or "hi" in msg:
         reply = f"Hello {username}! 👋 Want a joke or a fun fact?"
     elif "joke" in msg:
@@ -364,15 +370,16 @@ def chatbot_reply(username, message):
     elif "fact" in msg:
         reply = random.choice(fun_facts)
     else:
-        # ✅ Try Wikipedia before giving up
         wiki_result = wiki_summary(message)
         if wiki_result:
             reply = f"📖 According to Wikipedia:\n{wiki_result}"
         else:
-            reply = "🤔 I’m not sure. You can teach me: teach: question -> answer"
+            duck_result = duckduckgo_summary(message)
+            if duck_result:
+                reply = f"🔍 From DuckDuckGo:\n{duck_result}"
+            else:
+                reply = "🤔 I’m not sure. You can teach me: teach: question -> answer"
 
-
-    # 6️⃣ Cache & return
     if cache:
         cache.setex(cache_key, 3600, reply)
     save_chat(username, "bot", reply)
